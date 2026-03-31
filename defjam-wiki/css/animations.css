@@ -1,0 +1,298 @@
+/* ============================================================
+   DEF JAM FIGHT FOR NY — ANIMATIONS CSS
+   ============================================================ */
+
+/* ============================================================
+   KEYFRAMES
+   ============================================================ */
+
+@keyframes noiseAnim {
+  0%   { transform: translate(0, 0); }
+  25%  { transform: translate(-2%, -2%); }
+  50%  { transform: translate(1%, 1%); }
+  75%  { transform: translate(-1%, 2%); }
+  100% { transform: translate(2%, -1%); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideLeft {
+  from { opacity: 0; transform: translateX(-40px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slideRight {
+  from { opacity: 0; transform: translateX(40px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes scrollPulse {
+  0%, 100% { opacity: 1; transform: scaleY(1); }
+  50%       { opacity: 0.3; transform: scaleY(0.6); }
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+@keyframes glitchShift {
+  0%, 92%, 100% {
+    clip-path: none;
+    transform: none;
+    text-shadow: 0 0 60px rgba(200,16,46,0.5);
+  }
+  93% {
+    clip-path: polygon(0 10%, 100% 10%, 100% 40%, 0 40%);
+    transform: translateX(-4px);
+    text-shadow: 4px 0 var(--red-hot), -4px 0 var(--gold-light);
+  }
+  94% {
+    clip-path: polygon(0 50%, 100% 50%, 100% 80%, 0 80%);
+    transform: translateX(4px);
+    text-shadow: -4px 0 var(--red-hot), 4px 0 var(--gold-light);
+  }
+  95% {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    transform: none;
+    text-shadow: 0 0 60px rgba(200,16,46,0.5);
+  }
+}
+
+@keyframes glitchBefore {
+  0%, 92%, 100% { opacity: 0; }
+  93% {
+    opacity: 0.6;
+    clip-path: polygon(0 20%, 100% 20%, 100% 45%, 0 45%);
+    transform: translateX(6px) skew(-2deg);
+    color: var(--red-hot);
+  }
+  94% {
+    clip-path: polygon(0 55%, 100% 55%, 100% 75%, 0 75%);
+    transform: translateX(-6px) skew(2deg);
+    color: var(--gold-light);
+  }
+  95% { opacity: 0; }
+}
+
+@keyframes trackScan {
+  0%   { left: -100%; }
+  100% { left: 100%; }
+}
+
+@keyframes pulseRed {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(200,16,46,0); }
+  50%       { box-shadow: 0 0 0 8px rgba(200,16,46,0.15); }
+}
+
+@keyframes borderFlicker {
+  0%, 100% { border-color: rgba(200,16,46,0.4); }
+  33%       { border-color: rgba(200,16,46,0.15); }
+  66%       { border-color: rgba(200,16,46,0.6); }
+}
+
+@keyframes headerReveal {
+  from {
+    opacity: 0;
+    letter-spacing: 0.5em;
+    filter: blur(8px);
+  }
+  to {
+    opacity: 1;
+    letter-spacing: -0.01em;
+    filter: blur(0px);
+  }
+}
+
+@keyframes lineGrow {
+  from { width: 0; }
+  to   { width: 60px; }
+}
+
+@keyframes countUp {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ============================================================
+   GLITCH EFFECT
+   ============================================================ */
+
+.glitch {
+  position: relative;
+  animation: glitchShift 6s ease-in-out infinite;
+}
+
+.glitch::before {
+  content: attr(data-text);
+  position: absolute;
+  inset: 0;
+  animation: glitchBefore 6s ease-in-out infinite;
+}
+
+/* ============================================================
+   REVEAL ANIMATIONS (triggered by JS IntersectionObserver)
+   ============================================================ */
+
+.reveal-up,
+.reveal-left,
+.reveal-right {
+  opacity: 0;
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+              filter 0.6s ease;
+  filter: blur(4px);
+}
+
+.reveal-up    { transform: translateY(40px); }
+.reveal-left  { transform: translateX(-40px); }
+.reveal-right { transform: translateX(40px); }
+
+.delay-1 { transition-delay: 0.1s; }
+.delay-2 { transition-delay: 0.2s; }
+.delay-3 { transition-delay: 0.35s; }
+
+.reveal-up.visible,
+.reveal-left.visible,
+.reveal-right.visible {
+  opacity: 1;
+  transform: translate(0, 0);
+  filter: blur(0);
+}
+
+/* ============================================================
+   HERO TITLE ENTRY ANIMATION
+   ============================================================ */
+
+.hero-title {
+  animation: headerReveal 1.2s cubic-bezier(0.16, 1, 0.3, 1) 0.3s both;
+}
+
+/* ============================================================
+   NAV BAR ENTRY
+   ============================================================ */
+
+.nav-bar {
+  animation: slideUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) 0s both;
+}
+
+/* ============================================================
+   SECTION DIVIDER MARQUEE
+   ============================================================ */
+
+.section-divider .divider-text {
+  display: inline-block;
+  white-space: nowrap;
+  /* Duplicate the text so it loops seamlessly via JS */
+}
+
+/* ============================================================
+   CARD ENTRY STAGGER
+   ============================================================ */
+
+.style-card,
+.fighter-card,
+.legacy-block,
+.track-card {
+  transition:
+    opacity 0.6s ease,
+    transform 0.6s cubic-bezier(0.16, 1, 0.3, 1),
+    border-color 0.3s,
+    box-shadow 0.3s;
+}
+
+/* ============================================================
+   ACTIVE NAV LINK
+   ============================================================ */
+
+.nav-link.active {
+  color: var(--red-hot);
+  border-bottom: 2px solid var(--red);
+}
+
+/* ============================================================
+   CURSOR FLASH EFFECT ON FIGHT CARDS
+   ============================================================ */
+
+.fighter-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  background: radial-gradient(ellipse at 50% 50%, rgba(200,16,46,0.12) 0%, transparent 70%);
+  transition: opacity 0.3s;
+  pointer-events: none;
+}
+
+.fighter-card:hover::after {
+  opacity: 1;
+}
+
+/* ============================================================
+   PROGRESS BAR FILL
+   ============================================================ */
+
+.style-card {
+  --fill: 0%;
+}
+
+/* ============================================================
+   SCORE PULSE
+   ============================================================ */
+
+.score {
+  animation: pulseRed 3s ease-in-out infinite;
+  display: inline-block;
+  border-radius: 2px;
+  padding: 0 4px;
+}
+
+/* ============================================================
+   TRACK CARD HOVER STAGGER
+   ============================================================ */
+
+.track-card:nth-child(1) .track-fill { animation-delay: 0s; }
+.track-card:nth-child(2) .track-fill { animation-delay: 0.3s; }
+.track-card:nth-child(3) .track-fill { animation-delay: 0.6s; }
+.track-card:nth-child(4) .track-fill { animation-delay: 0.9s; }
+.track-card:nth-child(5) .track-fill { animation-delay: 1.2s; }
+.track-card:nth-child(6) .track-fill { animation-delay: 1.5s; }
+.track-card:nth-child(7) .track-fill { animation-delay: 1.8s; }
+.track-card:nth-child(8) .track-fill { animation-delay: 2.1s; }
+
+/* ============================================================
+   RED FLASH ON DIVIDERS
+   ============================================================ */
+
+.section-divider:not(.alt) {
+  animation: borderFlicker 4s ease-in-out infinite;
+}
+
+/* ============================================================
+   CUSTOM SCROLLBAR
+   ============================================================ */
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--black); }
+::-webkit-scrollbar-thumb {
+  background: var(--red-dark);
+  border-radius: 0;
+}
+::-webkit-scrollbar-thumb:hover { background: var(--red); }
+
+/* ============================================================
+   SELECTION STYLE
+   ============================================================ */
+
+::selection {
+  background: var(--red);
+  color: var(--white);
+}
