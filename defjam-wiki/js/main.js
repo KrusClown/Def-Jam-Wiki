@@ -208,7 +208,7 @@ for (let i = 0; i < TRAIL_LENGTH; i++) {
     width: ${4 + i * 1.5}px;
     height: ${4 + i * 1.5}px;
     border-radius: 50%;
-    background: rgba(200,16,46,${0.6 - i * 0.07});
+    background: rgba(245,197,24,${0.7 - i * 0.07});
     pointer-events: none;
     z-index: 99997;
     transform: translate(-50%, -50%);
@@ -237,7 +237,7 @@ if (infoCard) {
     let flickers = 0;
     const flicker = setInterval(() => {
       infoCard.style.boxShadow = flickers % 2 === 0
-        ? '0 0 20px rgba(200,16,46,0.3)'
+        ? '0 0 20px rgba(245,197,24,0.3)'
         : 'none';
       flickers++;
       if (flickers > 5) {

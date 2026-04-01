@@ -9,11 +9,11 @@
   --surface: #111111;
   --surface-2: #1a1a1a;
   --border: #222222;
-  --red: #c8102e;
-  --red-hot: #ff1a3a;
-  --red-dark: #8b0a1f;
-  --gold: #d4a017;
-  --gold-light: #f0c040;
+  --red: #f5c518;
+  --red-hot: #ffe566;
+  --red-dark: #c49a00;
+  --gold: #ff8c00;
+  --gold-light: #ffb347;
   --white: #f5f0e8;
   --grey: #888888;
   --grey-light: #aaaaaa;
@@ -83,7 +83,7 @@ body {
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(ellipse at 70% 50%, rgba(200,16,46,0.18) 0%, transparent 60%),
+    radial-gradient(ellipse at 70% 50%, rgba(245,197,24,0.18) 0%, transparent 60%),
     radial-gradient(ellipse at 20% 80%, rgba(212,160,23,0.08) 0%, transparent 50%),
     linear-gradient(160deg, #0a0a0a 0%, #050505 100%);
   z-index: 0;
@@ -97,7 +97,7 @@ body {
   font-family: var(--font-display);
   font-size: clamp(8rem, 20vw, 22rem);
   color: transparent;
-  -webkit-text-stroke: 1px rgba(200,16,46,0.08);
+  -webkit-text-stroke: 1px rgba(245,197,24,0.08);
   letter-spacing: -0.02em;
   line-height: 1;
   pointer-events: none;
@@ -114,7 +114,7 @@ body {
   z-index: 100;
   background: rgba(5,5,5,0.92);
   backdrop-filter: blur(16px);
-  border-bottom: 1px solid rgba(200,16,46,0.3);
+  border-bottom: 1px solid rgba(245,197,24,0.3);
   padding: 0 4vw;
 }
 
@@ -142,7 +142,7 @@ body {
 
 .nav-link:hover {
   color: var(--red-hot);
-  background: rgba(200,16,46,0.08);
+  background: rgba(245,197,24,0.08);
 }
 
 .hero-content {
@@ -185,7 +185,7 @@ body {
 .title-ny {
   display: block;
   color: var(--red);
-  text-shadow: 0 0 60px rgba(200,16,46,0.5);
+  text-shadow: 0 0 60px rgba(245,197,24,0.5);
 }
 
 .hero-sub {
@@ -220,7 +220,7 @@ body {
 .tag:hover {
   border-color: var(--red);
   color: var(--red);
-  background: rgba(200,16,46,0.07);
+  background: rgba(245,197,24,0.07);
 }
 
 .hero-scroll-hint {
@@ -264,7 +264,7 @@ body {
   font-size: 0.7rem;
   letter-spacing: 0.3em;
   text-transform: uppercase;
-  color: rgba(200,16,46,0.4);
+  color: rgba(245,197,24,0.4);
 }
 
 .container {
@@ -315,8 +315,8 @@ body {
 
 .section-divider.alt {
   background: linear-gradient(90deg, #0d0d0d 0%, #1a0a0a 50%, #0d0d0d 100%);
-  border-top: 1px solid rgba(200,16,46,0.3);
-  border-bottom: 1px solid rgba(200,16,46,0.3);
+  border-top: 1px solid rgba(245,197,24,0.3);
+  border-bottom: 1px solid rgba(245,197,24,0.3);
 }
 
 .divider-text {
@@ -396,7 +396,7 @@ body {
 .info-row.highlight {
   margin-top: 0.5rem;
   padding-top: 1rem;
-  border-top: 1px solid rgba(200,16,46,0.3);
+  border-top: 1px solid rgba(245,197,24,0.3);
   border-bottom: none;
 }
 
@@ -443,9 +443,9 @@ body {
 }
 
 .style-card:hover {
-  border-color: rgba(200,16,46,0.5);
+  border-color: rgba(245,197,24,0.5);
   transform: translateY(-4px);
-  box-shadow: 0 12px 40px rgba(200,16,46,0.15);
+  box-shadow: 0 12px 40px rgba(245,197,24,0.15);
 }
 
 .style-card:hover::before {
@@ -524,7 +524,7 @@ body {
 .feature-num {
   font-family: var(--font-display);
   font-size: 3rem;
-  color: rgba(200,16,46,0.2);
+  color: rgba(245,197,24,0.2);
   line-height: 1;
   flex-shrink: 0;
   width: 3rem;
@@ -562,7 +562,7 @@ body {
   font-family: var(--font-display);
   font-size: 12rem;
   color: transparent;
-  -webkit-text-stroke: 1px rgba(200,16,46,0.04);
+  -webkit-text-stroke: 1px rgba(245,197,24,0.04);
   pointer-events: none;
   user-select: none;
   white-space: nowrap;
@@ -586,7 +586,7 @@ body {
 .fighter-card:hover {
   transform: translateY(-6px);
   box-shadow: 0 20px 60px rgba(0,0,0,0.5);
-  border-color: rgba(200,16,46,0.4);
+  border-color: rgba(245,197,24,0.4);
 }
 
 .fighter-card[data-tier="boss"] {
@@ -632,8 +632,8 @@ body {
   letter-spacing: 0.15em;
   text-transform: uppercase;
   padding: 0.2rem 0.7rem;
-  background: rgba(200,16,46,0.1);
-  border: 1px solid rgba(200,16,46,0.25);
+  background: rgba(245,197,24,0.1);
+  border: 1px solid rgba(245,197,24,0.25);
   color: var(--red);
   margin-bottom: 1rem;
 }
@@ -684,7 +684,7 @@ body {
 }
 
 .venue-item:hover {
-  background: rgba(200,16,46,0.03);
+  background: rgba(245,197,24,0.03);
 }
 
 .venue-item:first-child { border-top: 1px solid var(--border); }
@@ -692,7 +692,7 @@ body {
 .venue-number {
   font-family: var(--font-display);
   font-size: 4rem;
-  color: rgba(200,16,46,0.15);
+  color: rgba(245,197,24,0.15);
   line-height: 1;
   flex-shrink: 0;
   width: 5rem;
@@ -701,7 +701,7 @@ body {
 }
 
 .venue-item:hover .venue-number {
-  color: rgba(200,16,46,0.4);
+  color: rgba(245,197,24,0.4);
 }
 
 .venue-info { flex: 1; }
@@ -746,9 +746,9 @@ body {
   letter-spacing: 0.12em;
   text-transform: uppercase;
   padding: 0.3rem 0.8rem;
-  border: 1px solid rgba(200,16,46,0.3);
-  color: rgba(200,16,46,0.7);
-  background: rgba(200,16,46,0.05);
+  border: 1px solid rgba(245,197,24,0.3);
+  color: rgba(245,197,24,0.7);
+  background: rgba(245,197,24,0.05);
 }
 
 /* ============================================================ SOUNDTRACK */
@@ -766,7 +766,7 @@ body {
   left: 0;
   right: 0;
   height: 300px;
-  background: radial-gradient(ellipse at 50% 100%, rgba(200,16,46,0.07) 0%, transparent 70%);
+  background: radial-gradient(ellipse at 50% 100%, rgba(245,197,24,0.07) 0%, transparent 70%);
   pointer-events: none;
 }
 
@@ -789,14 +789,14 @@ body {
 }
 
 .track-card:hover {
-  border-color: rgba(200,16,46,0.5);
+  border-color: rgba(245,197,24,0.5);
   transform: translateX(4px);
 }
 
 .track-num {
   font-family: var(--font-display);
   font-size: 1.5rem;
-  color: rgba(200,16,46,0.3);
+  color: rgba(245,197,24,0.3);
   width: 2rem;
   text-align: center;
   flex-shrink: 0;
@@ -854,7 +854,7 @@ body {
   padding: 2.5rem;
   background: var(--surface);
   border: 1px solid var(--border);
-  border-left: 3px solid rgba(200,16,46,0.4);
+  border-left: 3px solid rgba(245,197,24,0.4);
   transition: border-left-color 0.3s, transform 0.3s;
 }
 
@@ -901,7 +901,7 @@ body {
   transform: translateX(-50%);
   font-family: var(--font-display);
   font-size: 10rem;
-  color: rgba(200,16,46,0.07);
+  color: rgba(245,197,24,0.07);
   line-height: 1;
   pointer-events: none;
 }
@@ -946,7 +946,7 @@ cite {
   font-family: var(--font-display);
   font-size: clamp(8rem, 25vw, 20rem);
   color: transparent;
-  -webkit-text-stroke: 1px rgba(200,16,46,0.05);
+  -webkit-text-stroke: 1px rgba(245,197,24,0.05);
   pointer-events: none;
   user-select: none;
   white-space: nowrap;
@@ -987,7 +987,7 @@ cite {
   font-size: 0.7rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: rgba(200,16,46,0.5);
+  color: rgba(245,197,24,0.5);
 }
 
 /* ============================================================ RESPONSIVE */
