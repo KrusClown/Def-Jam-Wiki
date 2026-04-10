@@ -1008,3 +1008,158 @@ cite {
   .styles-grid { grid-template-columns: 1fr 1fr; }
   .soundtrack-grid { grid-template-columns: 1fr; }
 }
+
+/* ============================================================ ROSTER GROUPS */
+
+.roster-group {
+  margin-bottom: 5rem;
+}
+
+.roster-group-header {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.roster-group-side {
+  font-family: var(--font-condensed);
+  font-weight: 900;
+  font-size: 0.9rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  padding: 0.5rem 1.2rem;
+  white-space: nowrap;
+}
+
+.roster-group-side.dmob {
+  color: var(--red);
+  border: 1px solid var(--red);
+  background: rgba(245,197,24,0.06);
+}
+
+.roster-group-side.crow {
+  color: #7eb8d4;
+  border: 1px solid #7eb8d4;
+  background: rgba(126,184,212,0.06);
+}
+
+.roster-group-side.circuit {
+  color: var(--gold);
+  border: 1px solid var(--gold);
+  background: rgba(255,140,0,0.06);
+}
+
+.roster-group-line {
+  flex: 1;
+  height: 1px;
+  background: var(--border);
+  min-width: 40px;
+}
+
+.roster-count {
+  font-family: var(--font-condensed);
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  color: var(--grey);
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+/* ============================================================ FILTER UI */
+
+.roster-filter {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 4rem;
+}
+
+.filter-input {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--white);
+  font-family: var(--font-condensed);
+  font-size: 1rem;
+  letter-spacing: 0.05em;
+  padding: 0.9rem 1.2rem;
+  outline: none;
+  width: 100%;
+  max-width: 500px;
+  transition: border-color 0.2s;
+}
+
+.filter-input:focus {
+  border-color: var(--red);
+}
+
+.filter-input::placeholder {
+  color: var(--grey);
+}
+
+.filter-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.filter-btn {
+  font-family: var(--font-condensed);
+  font-weight: 700;
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  padding: 0.5rem 1.1rem;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--grey);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  border-color: var(--red);
+  color: var(--red);
+  background: rgba(245,197,24,0.07);
+}
+
+/* ============================================================ CARD TIER COLORS */
+
+.fighter-card[data-tier="boss"] {
+  border-color: rgba(245,197,24,0.4);
+  background: linear-gradient(135deg, var(--surface) 70%, rgba(245,197,24,0.04));
+}
+.fighter-card[data-tier="boss"] .fighter-rank { color: var(--red); }
+
+.fighter-card[data-tier="dmob"] .fighter-rank  { color: var(--red); }
+.fighter-card[data-tier="crow"] .fighter-rank  { color: #7eb8d4; }
+.fighter-card[data-tier="circuit"] .fighter-rank { color: var(--gold); }
+.fighter-card[data-tier="gf"] .fighter-rank    { color: #d98cd4; }
+.fighter-card[data-tier="gf-bad"] .fighter-rank { color: var(--grey); }
+
+.fighter-card[data-tier="gf"] {
+  border-color: rgba(217,140,212,0.25);
+}
+
+.fighter-card[data-tier="gf-bad"] {
+  opacity: 0.7;
+  border-style: dashed;
+}
+
+.gf-grid {
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+}
+
+/* ============================================================ GIRLFRIEND SECTION */
+
+.section-girlfriends {
+  background: var(--deep);
+}
+
+/* ============================================================ HIDDEN FILTER */
+
+.fighter-card.hidden {
+  display: none;
+}

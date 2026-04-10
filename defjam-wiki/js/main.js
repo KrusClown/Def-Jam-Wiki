@@ -299,3 +299,44 @@ if (scoreEl) {
 console.log('%cDEF JAM FIGHT FOR NY', 'font-size:2em;font-weight:bold;color:#c8102e;font-family:Impact,sans-serif;');
 console.log('%cWiki by a fan. No affiliation with EA Games, Def Jam, or AKI Corporation.', 'color:#888;font-size:0.9em;');
 console.log('%c"The streets of NY are mine." — D-Mob', 'color:#d4a017;font-style:italic;');
+
+// ============================================================
+// FIGHTER SEARCH + FILTER
+// ============================================================
+
+const searchInput = document.getElementById('fighterSearch');
+const filterBtns  = document.querySelectorAll('.filter-btn');
+const allCards    = document.querySelectorAll('.fighter-card[data-group]');
+
+function applyFilter() {
+  const query  = searchInput ? searchInput.value.toLowerCase() : '';
+  const active = document.querySelector('.filter-btn.active');
+  const group  = active ? active.dataset.filter : 'all';
+
+  allCards.forEach(card => {
+    const name    = (card.dataset.name || '').toLowerCase();
+    const cardGrp = card.dataset.group || '';
+    const matchSearch = !query || name.includes(query);
+    const matchGroup  = group === 'all' || cardGrp === group;
+
+    card.classList.toggle('hidden', !(matchSearch && matchGroup));
+  });
+
+  // Show/hide roster group headers based on visible cards
+  document.querySelectorAll('.roster-group').forEach(grp => {
+    const visible = grp.querySelectorAll('.fighter-card:not(.hidden)').length;
+    grp.style.display = visible === 0 ? 'none' : '';
+  });
+}
+
+if (searchInput) {
+  searchInput.addEventListener('input', applyFilter);
+}
+
+filterBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    filterBtns.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    applyFilter();
+  });
+});
