@@ -1,0 +1,1311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Def Jam: Fight for NY — Unofficial Wiki</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@400;600;700;900&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="css/style.css"/>
+<link rel="stylesheet" href="css/animations.css"/>
+</head>
+<body>
+
+<!-- SVG portrait sprites -->
+<div style="display:none" aria-hidden="true">
+  <object data="img/portraits.svg" type="image/svg+xml" style="display:none"></object>
+</div>
+<!-- inline SVG defs for <use> -->
+<svg style="display:none" aria-hidden="true">
+  <defs id="svg-defs"></defs>
+</svg>
+
+<div class="scanlines" aria-hidden="true"></div>
+<div class="noise"     aria-hidden="true"></div>
+<canvas id="particle-canvas" aria-hidden="true"></canvas>
+
+<!-- NAV -->
+<nav class="nav-bar" role="navigation" aria-label="Main navigation">
+  <ul>
+    <li><a class="nav-link" href="#overview">Overview</a></li>
+    <li><a class="nav-link" href="#gameplay">Gameplay</a></li>
+    <li><a class="nav-link" href="#fighters">Roster</a></li>
+    <li><a class="nav-link" href="#girlfriends">Girlfriends</a></li>
+    <li><a class="nav-link" href="#venues">Venues</a></li>
+    <li><a class="nav-link" href="#soundtrack">Soundtrack</a></li>
+    <li><a class="nav-link" href="#legacy">Legacy</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<header class="site-header">
+  <div class="header-bg" aria-hidden="true"></div>
+  <div class="header-graffiti" aria-hidden="true">FIGHT FOR NY</div>
+  <div class="hero-content">
+    <p class="hero-eyebrow">EA Games × Def Jam Recordings · 2004</p>
+    <h1 class="hero-title">
+      <span class="title-def">DEF JAM</span>
+      <span class="title-fight">FIGHT FOR</span>
+      <span class="title-ny glitch" data-text="NEW YORK">NEW YORK</span>
+    </h1>
+    <p class="hero-sub">The definitive street-fighting experience — 69 playable characters, 20 iconic venues, and a soundtrack that defined an era. New York's underworld never looked this good.</p>
+    <div class="hero-tags">
+      <span class="tag">PS2 · XBOX · GAMECUBE</span>
+      <span class="tag">69 Fighters</span>
+      <span class="tag">20 Venues</span>
+      <span class="tag">28-Track OST</span>
+      <span class="tag">Metacritic 85</span>
+    </div>
+  </div>
+  <div class="hero-scroll-hint" aria-hidden="true">
+    <div class="scroll-arrow"></div>
+    <span>Scroll</span>
+  </div>
+</header>
+
+<!-- STATS TICKER -->
+<div class="stats-ticker" aria-hidden="true">
+  <div class="stats-ticker-inner">
+    <div class="stat-item"><span class="val">69</span> Fighters</div>
+    <div class="stat-item"><span class="val">20</span> Venues</div>
+    <div class="stat-item"><span class="val">28</span> Tracks</div>
+    <div class="stat-item"><span class="val">5</span> Fighting Styles</div>
+    <div class="stat-item"><span class="val">6</span> Girlfriends</div>
+    <div class="stat-item"><span class="val">85</span> Metacritic</div>
+    <div class="stat-item"><span class="val">2004</span> Release</div>
+    <div class="stat-item">EA GAMES × DEF JAM RECORDINGS</div>
+    <div class="stat-item">THE STREETS OF NEW YORK NEVER SLEEP</div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════
+  OVERVIEW
+════════════════════════════════════════════ -->
+<section class="section section-overview" id="overview">
+  <span class="section-label">01 / Overview</span>
+  <div class="container">
+    <div class="overview-grid">
+      <div>
+        <h2 class="section-title reveal-up">The Game<br/>That Changed<br/>Everything</h2>
+        <p class="body-text reveal-up delay-1">
+          <strong>Def Jam: Fight for NY</strong> is a hip-hop-themed fighting game developed by EA Canada and published by EA Games in 2004. The sequel to <em>Def Jam Vendetta</em>, it expanded virtually every system — a massive roster of hip-hop icons, deep fighting styles, a full story mode, and an unforgettable soundtrack.
+        </p>
+        <p class="body-text reveal-up delay-2">
+          You play a nameless street fighter recruited by <strong>D-Mob</strong> after he witnesses your brawling talent. What follows is a violent, stylish journey through New York's underground fight circuit — from Harlem rooftops to downtown clubs, from the New Jersey docks to the Bronx subway.
+        </p>
+        <p class="body-text reveal-up delay-3">
+          The game's genius lay in its <em>combination system</em>: every character blends two of five fighting disciplines — Street Fighting, Kickboxing, Martial Arts, Wrestling, and Submissions — creating endless variety. Throw in cribs, bling, and your girl on the sideline, and you had something no other fighting game offered.
+        </p>
+        <div class="reveal-up delay-4" style="margin-top:2.5rem">
+          <h3 class="sub-title">Why It Matters</h3>
+          <div class="features-grid">
+            <div class="feature-item">
+              <div class="feature-num">01</div>
+              <div class="feature-content">
+                <div class="feature-title">Hip-Hop Legitimacy</div>
+                <p>Over 40 actual hip-hop artists voiced and motion-captured their own characters. It wasn't just licensed — it was authentic.</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-num">02</div>
+              <div class="feature-content">
+                <div class="feature-title">Narrative Depth</div>
+                <p>A full story mode with branching decisions, crib upgrades, girl relationships, and an ending that actually hit hard.</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-num">03</div>
+              <div class="feature-content">
+                <div class="feature-title">Environmental Combat</div>
+                <p>Every venue was a weapon. Throw someone into a crowd, off a rooftop, into oncoming subway cars. The arena was alive.</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-num">04</div>
+              <div class="feature-content">
+                <div class="feature-title">The Blazin' System</div>
+                <p>Fill your momentum meter and unleash a unique, character-specific finisher. Each celebrity had their own signature move.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- info card -->
+      <aside class="info-card reveal-left delay-2">
+        <div class="card-header">Game Info</div>
+        <div class="info-row"><span class="info-label">Developer</span><span class="info-value">EA Canada</span></div>
+        <div class="info-row"><span class="info-label">Publisher</span><span class="info-value">EA Games</span></div>
+        <div class="info-row"><span class="info-label">Released</span><span class="info-value">September 2004</span></div>
+        <div class="info-row"><span class="info-label">Platforms</span><span class="info-value">PS2 · Xbox · GCN</span></div>
+        <div class="info-row"><span class="info-label">Genre</span><span class="info-value">Fighting</span></div>
+        <div class="info-row"><span class="info-label">Series</span><span class="info-value">Def Jam (2nd)</span></div>
+        <div class="info-row"><span class="info-label">Fighters</span><span class="info-value">69 Playable</span></div>
+        <div class="info-row"><span class="info-label">Venues</span><span class="info-value">20 Arenas</span></div>
+        <div class="info-row"><span class="info-label">Soundtrack</span><span class="info-value">28 Tracks</span></div>
+        <div class="info-row"><span class="info-label">Fighting Styles</span><span class="info-value">5 Disciplines</span></div>
+        <div class="info-row highlight">
+          <span class="info-label">Metacritic</span>
+          <span class="info-value score" id="metacritic-score" data-score="85">85</span>
+        </div>
+        <div class="info-row"><span class="info-label">Rating</span><span class="info-value">M (Mature)</span></div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider">
+  <div class="divider-text">FIGHT FOR NEW YORK &nbsp;·&nbsp; STREET WARFARE &nbsp;·&nbsp; DEF JAM &nbsp;·&nbsp; EA GAMES &nbsp;·&nbsp;</div>
+</div>
+
+<!-- ═══════════════════════════════════════════
+  GAMEPLAY
+════════════════════════════════════════════ -->
+<section class="section section-gameplay" id="gameplay">
+  <span class="section-label">02 / Gameplay</span>
+  <div class="container">
+    <h2 class="section-title reveal-up">Five Ways<br/>To Fight</h2>
+    <p class="body-text reveal-up delay-1">Every fighter combines two disciplines from five core styles. Mastering the interactions between them — and exploiting environmental hazards — is the key to survival in New York's underground.</p>
+
+    <div class="styles-grid">
+      <div class="style-card reveal-up delay-1">
+        <span class="style-icon">🥊</span>
+        <div class="style-name">Street Fighting</div>
+        <div class="style-desc">Raw power, aggressive combos, and dirty tricks. The most accessible style, devastating up close.</div>
+        <div class="style-bar"><div class="style-fill" style="--fill:92%"></div></div>
+        <div class="style-stat">Power: Extreme</div>
+      </div>
+      <div class="style-card reveal-up delay-2">
+        <span class="style-icon">🦵</span>
+        <div class="style-name">Kickboxing</div>
+        <div class="style-desc">High kicks, combinations, and solid defense. Balanced offense with excellent range control.</div>
+        <div class="style-bar"><div class="style-fill" style="--fill:78%"></div></div>
+        <div class="style-stat">Power: High</div>
+      </div>
+      <div class="style-card reveal-up delay-3">
+        <span class="style-icon">🥋</span>
+        <div class="style-name">Martial Arts</div>
+        <div class="style-desc">Speed, precision, and counter-attack mastery. The hardest style to master, highest skill ceiling.</div>
+        <div class="style-bar"><div class="style-fill" style="--fill:70%"></div></div>
+        <div class="style-stat">Speed: Extreme</div>
+      </div>
+      <div class="style-card reveal-up delay-2">
+        <span class="style-icon">💪</span>
+        <div class="style-name">Wrestling</div>
+        <div class="style-desc">Grapples, suplexes, and power slams. Unmatched for corner and environmental damage.</div>
+        <div class="style-bar"><div class="style-fill" style="--fill:88%"></div></div>
+        <div class="style-stat">Power: Extreme</div>
+      </div>
+      <div class="style-card reveal-up delay-3">
+        <span class="style-icon">🔒</span>
+        <div class="style-name">Submissions</div>
+        <div class="style-desc">Joint locks, chokes, and ground control. Renders opponents helpless — if you can get them down.</div>
+        <div class="style-bar"><div class="style-fill" style="--fill:65%"></div></div>
+        <div class="style-stat">Control: Max</div>
+      </div>
+    </div>
+
+    <h3 class="sub-title reveal-up" style="margin-top:5rem">The Blazin' System</h3>
+    <p class="body-text reveal-up delay-1">Fill your momentum meter through successful strikes and environmental interactions. When it maxes out, trigger your character's unique <em>Blazin' Move</em> — a cinematic, brutal finisher that reflects each celebrity's personality and the environment around you.</p>
+  </div>
+</section>
+
+<div class="section-divider alt">
+  <div class="divider-text">THE ROSTER &nbsp;·&nbsp; 69 FIGHTERS &nbsp;·&nbsp; D-MOB'S CREW &nbsp;·&nbsp; CROW'S CREW &nbsp;·&nbsp; THE CIRCUIT &nbsp;·&nbsp;</div>
+</div>
+
+<!-- ═══════════════════════════════════════════
+  FIGHTERS
+════════════════════════════════════════════ -->
+<section class="section section-fighters" id="fighters">
+  <span class="section-label">03 / Roster</span>
+  <div class="container">
+    <h2 class="section-title reveal-up">69 Fighters.<br/>One City.</h2>
+    <p class="body-text reveal-up delay-1">The most stacked roster in fighting game history. Hip-hop legends, street brawlers, and underground circuit champions — every one with their own style, story, and Blazin' move.</p>
+
+    <!-- Filter UI -->
+    <div class="roster-filter reveal-up delay-2">
+      <input type="text" id="fighterSearch" class="filter-input" placeholder="Search fighters by name…" autocomplete="off"/>
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="all">All (69)</button>
+        <button class="filter-btn" data-filter="dmob">D-Mob's Crew</button>
+        <button class="filter-btn" data-filter="crow">Crow's Crew</button>
+        <button class="filter-btn" data-filter="circuit">Circuit</button>
+      </div>
+    </div>
+
+    <!-- D-MOB'S CREW -->
+    <div class="roster-group" id="group-dmob">
+      <div class="roster-group-header reveal-up">
+        <span class="roster-group-side dmob">D-Mob's Crew</span>
+        <div class="roster-group-line"></div>
+        <span class="roster-count">The Loyalists</span>
+      </div>
+      <div class="fighters-grid">
+
+        <div class="fighter-card" data-tier="boss" data-group="dmob" data-name="d-mob dmob boss">
+          <div class="fighter-portrait">
+            <svg viewBox="0 0 280 200"><use href="#portrait-dmob"/></svg>
+            <div class="portrait-shine"></div>
+          </div>
+          <div class="fighter-body">
+            <div class="fighter-rank">BOSS — D-MOB'S CREW</div>
+            <div class="fighter-name">D-MOB</div>
+            <div class="fighter-real">Voiced by Snoop Dogg</div>
+            <div class="fighter-style">Street Fighting / Kickboxing</div>
+            <p class="fighter-bio">The undisputed king of New York's underground fight circuit. D-Mob built his empire from nothing and will burn down the city before letting Crow take it. Ruthless, charismatic, and always two steps ahead.</p>
+            <div class="fighter-tags"><span>Story Lead</span><span>Antagonist</span><span>Unlockable</span></div>
+            <div class="blazin-bar"><div class="blazin-fill"></div></div>
+          </div>
+        </div>
+
+        <div class="fighter-card" data-tier="dmob" data-group="dmob" data-name="blaze method man clifford smith wu-tang">
+          <div class="fighter-portrait">
+            <svg viewBox="0 0 280 200"><use href="#portrait-blaze"/></svg>
+            <div class="portrait-shine"></div>
+          </div>
+          <div class="fighter-body">
+            <div class="fighter-rank">LIEUTENANT</div>
+            <div class="fighter-name">BLAZE</div>
+            <div class="fighter-real">Method Man — Clifford Smith Jr.</div>
+            <div class="fighter-style">Street Fighting</div>
+            <p class="fighter-bio">Wu-Tang's iron fist transplanted to the NYC circuit. Blaze is D-Mob's most trusted soldier — raw power wrapped in street wisdom.</p>
+            <div class="fighter-tags"><span>Story Lead</span><span>Unlockable</span></div>
+            <div class="blazin-bar"><div class="blazin-fill"></div></div>
+          </div>
+        </div>
+
+        <div class="fighter-card" data-tier="dmob" data-group="dmob" data-name="magic busta rhymes trevor smith">
+          <div class="fighter-portrait">
+            <svg viewBox="0 0 280 200"><use href="#portrait-magic"/></svg>
+            <div class="portrait-shine"></div>
+          </div>
+          <div class="fighter-body">
+            <div class="fighter-rank">ENFORCER</div>
+            <div class="fighter-name">MAGIC</div>
+            <div class="fighter-real">Busta Rhymes — Trevor Smith Jr.</div>
+            <div class="fighter-style">Street Fighting / Kickboxing</div>
+            <p class="fighter-bio">The fastest big man in the circuit. Magic brings Flipmode Squad energy to every fight — explosive, unpredictable, and absolutely ferocious.</p>
+            <div class="fighter-tags"><span>Story Role</span><span>Unlockable</span></div>
+            <div class="blazin-bar"><div class="blazin-fill"></div></div>
+          </div>
+        </div>
+
+        <div class="fighter-card" data-tier="dmob" data-group="dmob" data-name="luda ludacris chris bridges">
+          <div class="fighter-portrait">
+            <svg viewBox="0 0 280 200"><use href="#portrait-luda"/></svg>
+            <div class="portrait-shine"></div>
+          </div>
+          <div class="fighter-body">
+            <div class="fighter-rank">SOLDIER</div>
+            <div class="fighter-name">LUDA</div>
+            <div class="fighter-real">Ludacris — Chris Bridges</div>
+            <div class="fighter-style">Kickboxing / Street Fighting</div>
+            <p class="fighter-bio">DTP's representative in the NYC underground. Luda fights with the same wild unpredictability that defines his music — fast, hard, and always entertaining.</p>
+            <div class="fighter-tags"><span>Fan Favorite</span><span>Unlockable</span></div>
+            <div class="blazin-bar"><div class="blazin-fill"></div></div>
+          </div>
+        </div>
+
+        <div class="fighter-card" data-tier="dmob" data-group="dmob" data-name="ghostface ghostface killah tony starks wu-tang">
+          <div class="fighter-portrait">
+            <svg viewBox="0 0 280 200"><use href="#portrait-ghostface"/></svg>
+            <div class="portrait-shine"></div>
+          </div>
+          <div class="fighter-body">
+            <div class="fighter-rank">WU-TANG AMBASSADOR</div>
+            <div class="fighter-name">GHOSTFACE</div>
+            <div class="fighter-real">Ghostface Killah — Dennis Coles</div>
+            <div class="fighter-style">Street Fighting / Martial Arts</div>
+            <p class="fighter-bio">The Iron Man of the Wu comes to the underground circuit loaded with rings and righteous fury. Ghostface turns every fight into a masterwork of controlled chaos.</p>
+            <div class="fighter-tags"><span>Wu-Tang</span><span>Unlockable</span></div>
+            <div class="blazin-bar"><div class="blazin-fill"></div></div>
+          </div>
+        </div>
+
+        <div class="fighter-card" data-tier="dmob" data-group="dmob" data-name="redman reggie noble def squad">
+          <div class="fighter-portrait">
+            <svg viewBox="0 0 280 200"><use href="#portrait-redman"/></svg>
+            <div class="portrait-shine"></div>
+          </div>
+          <div class="fighter-body">
+            <div class="fighter-rank">SOLDIER</div>
+            <div class="fighter-name">REDMAN</div>
+            <div class="fighter-real">Redman — Reginald Noble</div>
+            <div class="fighter-style">Street Fighting</div>
+            <p class="fighter-bio">Funk Doc brings New Jersey's rawest energy to the New York circuit. Don't let the laid-back vibe fool you — Redman hits like a freight train and never stops coming.</p>
+            <div class="fighter-tags"><span>Def Squad</span><span>Unlockable</span></div>
+            <div class="blazin-bar"><div class="blazin-fill"></div></div>
+          </div>
+        </div>
+
+        <div class="fighter-card" data-tier="dmob" data-group="dmob" data-name="sticky fingaz kirk jones onyx">
+          <div class="fighter-portrait">
+            <svg viewBox="0 0 280 200"><use href="#portrait-sticky"/></svg>
+            <div class="portrait-shine"></div>
+          </div>
+          <div class="fighter-body">
+            <div class="fighter-rank">MUSCLE</div>
+            <div class="fighter-name">STICKY FINGAZ</div>
+            <div class="fighter-real">Sticky Fingaz — Kirk Jones</div>
+            <div class="fighter-style">Street Fighting / Submissions</div>
+            <p class="fighter-bio">Onyx's most vicious member brought the underground slam-rap aggression straight into the fight circuit. Nobody in New York is scarier when he's angry.</p>
+            <div class="fighter-tags"><span>Onyx</span><span>Unlockable</span></div>
+            <div class="blazin-bar"><div class="blazin-fill"></div></div>
+          </div>
+        </div>
+
+        <div class="fighter-card" data-tier="dmob" data-group="dmob" data-name="ice-t icet tracy lauren marrow">
+          <div class="fighter-portrait">
+            <svg viewBox="0 0 280 200"><use href="#portrait-icet"/></svg>
+            <div class="portrait-shine"></div>
+          </div>
+          <div class="fighter-body">
+            <div class="fighter-rank">OG VETERAN</div>
+            <div class="fighter-name">ICE-T</div>
+            <div class="fighter-real">Ice-T — Tracy Marrow</div>
+            <div class="fighter-style">Street Fighting / Kickboxing</div>
+            <p class="fighter-bio">The original gangsta rap pioneer. Ice-T's decades of street knowledge translate into a deceptively technical fighting style. He's seen everything and can counter anything.</p>
+            <div class="fighter-tags"><span>OG</span><span>Unlockable</span></div>
+            <div class="blazin-bar"><div class="blazin-fill"></div></div>
+          </div>
+        </div>
+
+        <!-- remaining D-Mob crew: generic portraits -->
+        <div class="fighter-card" data-tier="dmob" data-group="dmob" data-name="flava flav william drayton public enemy">
+          <div class="fighter-portrait">
+            <svg viewBox="0 0 280 200"><use href="#portrait-generic"/></svg>
+            <div class="portrait-shine"></div>
+          </div>
+          <div class="fighter-body">
+            <div class="fighter-rank">HYPE MAN</div>
+            <div class="fighter-name">FLAVA FLAV</div>
+            <div class="fighter-real">Public Enemy — William Drayton Jr.</div>
+            <div class="fighter-style">Street Fighting</div>
+            <p class="fighter-bio">The legendary hype man of Public Enemy. Flava brings chaotic, unpredictable brawling to the circuit. Don't underestimate the clock man.</p>
+            <div class="fighter-tags"><span>Public Enemy</span></div>
+          </div>
+        </div>
+
+        <div class="fighter-card" data-tier="dmob" data-group="dmob" data-name="slick rick ricky walters the ruler">
+          <div class="fighter-portrait">
+            <svg viewBox="0 0 280 200"><use href="#portrait-generic"/></svg>
+            <div class="portrait-shine"></div>
+          </div>
+          <div class="fighter-body">
+            <div class="fighter-rank">THE RULER</div>
+            <div class="fighter-name">SLICK RICK</div>
+            <div class="fighter-real">Ricky Walters — The Ruler</div>
+            <div class="fighter-style">Street Fighting / Kickboxing</div>
+            <p class="fighter-bio">Storytelling royalty turned underground brawler. Slick Rick fights with the same regal elegance he's always carried. Patch and all.</p>
+            <div class="fighter-tags"><span>Unlockable</span></div>
+          </div>
+        </div>
+
+        <div class="fighter-card" data-tier="dmob" data-group="dmob" data-name="capone noreaga nore perico">
+          <div class="fighter-portrait">
+            <svg viewBox="0 0 280 200"><use href="#portrait-generic"/></svg>
+            <div class="portrait-shine"></div>
+          </div>
+          <div class="fighter-body">
+            <div class="fighter-rank">CNN SOLDIER</div>
+            <div class="fighter-name">N.O.R.E.</div>
+            <div class="fighter-real">Capone-N-Noreaga</div>
+            <div class="fighter-style">Street Fighting</div>
+            <p class="fighter-bio">Queens' finest representing the Lefrak block. N.O.R.E. comes with the Noreaga energy — relentless, powerful, never backing down.</p>
+            <div class="fighter-tags"><span>CNN</span></div>
+          </div>
+        </div>
+
+        <div class="fighter-card" data-tier="dmob" data-group="dmob" data-name="scarface brad jordan houston geto boys">
+          <div class="fighter-portrait">
+            <svg viewBox="0 0 280 200"><use href="#portrait-generic"/></svg>
+            <div class="portrait-shine"></div>
+          </div>
+          <div class="fighter-body">
+            <div class="fighter-rank">SOUTHERN SOLDIER</div>
+            <div class="fighter-name">SCARFACE</div>
+            <div class="fighter-real">Brad Jordan — Geto Boys</div>
+            <div class="fighter-style">Street Fighting / Wrestling</div>
+            <p class="fighter-bio">The king of Southern rap brought his no-nonsense Houston hustle to New York. Scarface fights as seriously as he spits — with purpose and absolute conviction.</p>
+            <div class="fighter-tags"><span>Geto Boys</span></div>
+          </div>
+        </div>
+
+        <div class="fighter-card" data-tier="dmob" data-group="dmob" data-name="WC william calhoun westside connection ice cube">
+          <div class="fighter-portrait">
+            <svg viewBox="0 0 280 200"><use href="#portrait-generic"/></svg>
+            <div class="portrait-shine"></div>
+          </div>
+          <div class="fighter-body">
+            <div class="fighter-rank">WEST COAST AMBASSADOR</div>
+            <div class="fighter-name">WC</div>
+            <div class="fighter-real">Westside Connection — William Calhoun</div>
+            <div class="fighter-style">Kickboxing / Street Fighting</div>
+            <p class="fighter-bio">Westside Connection's enforcer in the Big Apple. WC blends Compton's underground fighting traditions with genuine technical skill.</p>
+            <div class="fighter-tags"><span>Westside Connection</span></div>
+          </div>
+        </div>
+
+        <div class="fighter-card" data-tier="dmob" data-group="dmob" data-name="joe budden joey budden pump it up">
+          <div class="fighter-portrait">
+            <svg viewBox="0 0 280 200"><use href="#portrait-generic"/></svg>
+            <div class="portrait-shine"></div>
+          </div>
+          <div class="fighter-body">
+            <div class="fighter-rank">JERSEY SOLDIER</div>
+            <div class="fighter-name">JOE BUDDEN</div>
+            <div class="fighter-real">Joseph Budden</div>
+            <div class="fighter-style">Street Fighting</div>
+            <p class="fighter-bio">The Pump It Up rapper proves he can back up every lyric on the circuit floor. Jersey aggression with New York polish.</p>
+            <div class="fighter-tags"><span>Pump It Up</span></div>
+          </div>
+        </div>
+
+        <div class="fighter-card" data-tier="dmob" data-group="dmob" data-name="Sean Paul sean paul henriques dancehall">
+          <div class="fighter-portrait">
+            <svg viewBox="0 0 280 200"><use href="#portrait-generic"/></svg>
+            <div class="portrait-shine"></div>
+          </div>
+          <div class="fighter-body">
+            <div class="fighter-rank">INTERNATIONAL</div>
+            <div class="fighter-name">SEAN PAUL</div>
+            <div class="fighter-real">Sean Paul Henriques</div>
+            <div class="fighter-style">Kickboxing / Martial Arts</div>
+            <p class="fighter-bio">Jamaica's dancehall king brings fluid, rhythm-based movement to the underground circuit. His fighting style hits as smooth as his flows.</p>
+            <div class="fighter-tags"><span>International</span></div>
+          </div>
+        </div>
+
+        <div class="fighter-card" data-tier="dmob" data-group="dmob" data-name="lil scrappy darryl richardson BMF">
+          <div class="fighter-portrait">
+            <svg viewBox="0 0 280 200"><use href="#portrait-generic"/></svg>
+            <div class="portrait-shine"></div>
+          </div>
+          <div class="fighter-body">
+            <div class="fighter-rank">YOUNG BLOOD</div>
+            <div class="fighter-name">LIL SCRAPPY</div>
+            <div class="fighter-real">Darryl Richardson II</div>
+            <div class="fighter-style">Street Fighting</div>
+            <p class="fighter-bio">One of the youngest fighters in the circuit and easily the most fearless. Lil Scrappy fights like he has nothing to lose — because he came from nothing.</p>
+            <div class="fighter-tags"><span>ATL</span></div>
+          </div>
+        </div>
+
+        <div class="fighter-card" data-tier="dmob" data-group="dmob" data-name="dj whoo kid whoo kid g-unit radio">
+          <div class="fighter-portrait">
+            <svg viewBox="0 0 280 200"><use href="#portrait-generic"/></svg>
+            <div class="portrait-shine"></div>
+          </div>
+          <div class="fighter-body">
+            <div class="fighter-rank">HYPE</div>
+            <div class="fighter-name">DJ WHOO KID</div>
+            <div class="fighter-real">G-Unit Radio</div>
+            <div class="fighter-style">Street Fighting</div>
+            <p class="fighter-bio">The architect of G-Unit Radio, Whoo Kid channels the mixtape hustle into a brutal combat style. He drops beats and bodies.</p>
+            <div class="fighter-tags"><span>G-Unit</span></div>
+          </div>
+        </div>
+
+      </div>
+    </div><!-- /dmob group -->
+
+    <!-- CROW'S CREW -->
+    <div class="roster-group" id="group-crow">
+      <div class="roster-group-header reveal-up">
+        <span class="roster-group-side crow">Crow's Crew</span>
+        <div class="roster-group-line"></div>
+        <span class="roster-count">The Usurpers</span>
+      </div>
+      <div class="fighters-grid">
+
+        <div class="fighter-card" data-tier="boss" data-group="crow" data-name="crow snoop dogg calvin cordozar broadus">
+          <div class="fighter-portrait">
+            <svg viewBox="0 0 280 200"><use href="#portrait-crow"/></svg>
+            <div class="portrait-shine"></div>
+          </div>
+          <div class="fighter-body">
+            <div class="fighter-rank">BOSS — CROW'S CREW</div>
+            <div class="fighter-name">CROW</div>
+            <div class="fighter-real">Snoop Dogg — Calvin Broadus Jr.</div>
+            <div class="fighter-style">Street Fighting / Kickboxing</div>
+            <p class="fighter-bio">The Long Beach legend who came to New York to take everything D-Mob built. Crow operates with West Coast calm and maximum efficiency — smooth as silk, sharp as a blade.</p>
+            <div class="fighter-tags"><span>Story Villain</span><span>Final Boss</span><span>Unlockable</span></div>
+            <div class="blazin-bar"><div class="blazin-fill"></div></div>
+          </div>
+        </div>
+
+        <div class="fighter-card" data-tier="crow" data-group="crow" data-name="crack fat joe joseph cartagena terror squad">
+          <div class="fighter-portrait">
+            <svg viewBox="0 0 280 200"><use href="#portrait-crack"/></svg>
+            <div class="portrait-shine"></div>
+          </div>
+          <div class="fighter-body">
+            <div class="fighter-rank">ENFORCER</div>
+            <div class="fighter-name">CRACK</div>
+            <div class="fighter-real">Fat Joe — Joseph Cartagena</div>
+            <div class="fighter-style">Street Fighting / Wrestling</div>
+            <p class="fighter-bio">The Big Pun successor turned Crow's chief enforcer. Crack's combination of enormous power and surprising speed makes him one of the most dangerous fighters in the circuit.</p>
+            <div class="fighter-tags"><span>Terror Squad</span><span>Story Lead</span><span>Unlockable</span></div>
+            <div class="blazin-bar"><div class="blazin-fill"></div></div>
+          </div>
+        </div>
+
+        <div class="fighter-card" data-tier="crow" data-group="crow" data-name="trejo danny trejo machete">
+          <div class="fighter-portrait">
+            <svg viewBox="0 0 280 200"><use href="#portrait-trejo"/></svg>
+            <div class="portrait-shine"></div>
+          </div>
+          <div class="fighter-body">
+            <div class="fighter-rank">VETERAN MUSCLE</div>
+            <div class="fighter-name">TREJO</div>
+            <div class="fighter-real">Danny Trejo</div>
+            <div class="fighter-style">Street Fighting / Submissions</div>
+            <p class="fighter-bio">Hollywood's most dangerous man brought decades of real street experience to the underground. Trejo's tattoos tell the story of where he's been — and his fists tell you where you're going.</p>
+            <div class="fighter-tags"><span>Actor</span><span>Unlockable</span></div>
+            <div class="blazin-bar"><div class="blazin-fill"></div></div>
+          </div>
+        </div>
+
+        <div class="fighter-card" data-tier="crow" data-group="crow" data-name="omar epps malik williams er">
+          <div class="fighter-portrait">
+            <svg viewBox="0 0 280 200"><use href="#portrait-generic"/></svg>
+            <div class="portrait-shine"></div>
+          </div>
+          <div class="fighter-body">
+            <div class="fighter-rank">LIEUTENANT</div>
+            <div class="fighter-name">OMAR</div>
+            <div class="fighter-real">Omar Epps — Malik Williams</div>
+            <div class="fighter-style">Kickboxing / Martial Arts</div>
+            <p class="fighter-bio">The ER actor brings a surprisingly technical game to the underground. Omar fights smart — reads his opponent, waits, then strikes with surgical precision.</p>
+            <div class="fighter-tags"><span>Actor</span><span>Story Role</span></div>
+          </div>
+        </div>
+
+        <div class="fighter-card" data-tier="crow" data-group="crow" data-name="henry rollins black flag rollins band">
+          <div class="fighter-portrait">
+            <svg viewBox="0 0 280 200"><use href="#portrait-generic"/></svg>
+            <div class="portrait-shine"></div>
+          </div>
+          <div class="fighter-body">
+            <div class="fighter-rank">WILDCARD</div>
+            <div class="fighter-name">HENRY ROLLINS</div>
+            <div class="fighter-real">Black Flag / Rollins Band</div>
+            <div class="fighter-style">Street Fighting / Submissions</div>
+            <p class="fighter-bio">The punk rock icon and spoken-word artist surprised everyone by being one of the most fearsome brawlers in the circuit. Rollins trains obsessively and his body shows it.</p>
+            <div class="fighter-tags"><span>Rock Icon</span><span>Unlockable</span></div>
+          </div>
+        </div>
+
+        <div class="fighter-card" data-tier="crow" data-group="crow" data-name="broad shoulders deebo sean moulton">
+          <div class="fighter-portrait">
+            <svg viewBox="0 0 280 200"><use href="#portrait-generic"/></svg>
+            <div class="portrait-shine"></div>
+          </div>
+          <div class="fighter-body">
+            <div class="fighter-rank">MUSCLE</div>
+            <div class="fighter-name">BROAD</div>
+            <div class="fighter-real">Original Character</div>
+            <div class="fighter-style">Wrestling / Street Fighting</div>
+            <p class="fighter-bio">Crow's foot soldier and pure power house. Broad doesn't have technique — he has size, strength, and absolutely no mercy for whoever is in front of him.</p>
+            <div class="fighter-tags"><span>Original</span></div>
+          </div>
+        </div>
+
+        <div class="fighter-card" data-tier="crow" data-group="crow" data-name="santos raul santos latin king">
+          <div class="fighter-portrait">
+            <svg viewBox="0 0 280 200"><use href="#portrait-generic"/></svg>
+            <div class="portrait-shine"></div>
+          </div>
+          <div class="fighter-body">
+            <div class="fighter-rank">STREET SOLDIER</div>
+            <div class="fighter-name">SANTOS</div>
+            <div class="fighter-real">Original Character</div>
+            <div class="fighter-style">Kickboxing / Martial Arts</div>
+            <p class="fighter-bio">East Harlem's finest brings a fluid blend of street sense and technical striking. Santos moves through a crowd like water and hits like concrete.</p>
+            <div class="fighter-tags"><span>Original</span></div>
+          </div>
+        </div>
+
+        <div class="fighter-card" data-tier="crow" data-group="crow" data-name="LL cool J james todd smith la ladies love">
+          <div class="fighter-portrait">
+            <svg viewBox="0 0 280 200"><use href="#portrait-generic"/></svg>
+            <div class="portrait-shine"></div>
+          </div>
+          <div class="fighter-body">
+            <div class="fighter-rank">QUEENS LEGEND</div>
+            <div class="fighter-name">LL COOL J</div>
+            <div class="fighter-real">James Todd Smith</div>
+            <div class="fighter-style">Street Fighting / Kickboxing</div>
+            <p class="fighter-bio">Mama said knock you out — and LL Cool J has been doing exactly that since Hollis, Queens. Built like a tank, moves like a boxer, hits like a freight train.</p>
+            <div class="fighter-tags"><span>Queens</span><span>Unlockable</span></div>
+          </div>
+        </div>
+
+      </div>
+    </div><!-- /crow group -->
+
+    <!-- THE CIRCUIT -->
+    <div class="roster-group" id="group-circuit">
+      <div class="roster-group-header reveal-up">
+        <span class="roster-group-side circuit">The Circuit</span>
+        <div class="roster-group-line"></div>
+        <span class="roster-count">Independent Fighters</span>
+      </div>
+      <div class="fighters-grid">
+
+        <div class="fighter-card" data-tier="circuit" data-group="circuit" data-name="player player character hero protagonist">
+          <div class="fighter-portrait">
+            <svg viewBox="0 0 280 200"><use href="#portrait-generic"/></svg>
+            <div class="portrait-shine"></div>
+          </div>
+          <div class="fighter-body">
+            <div class="fighter-rank">PLAYER CHARACTER</div>
+            <div class="fighter-name">THE PLAYER</div>
+            <div class="fighter-real">Customizable Hero</div>
+            <div class="fighter-style">Player's Choice</div>
+            <p class="fighter-bio">That's you. Pulled off the street by D-Mob after he witnesses raw talent. You get to choose your fighting style, your look, your girl — and eventually, your loyalty.</p>
+            <div class="fighter-tags"><span>Story Lead</span><span>Customizable</span></div>
+          </div>
+        </div>
+
+        <div class="fighter-card" data-tier="circuit" data-group="circuit" data-name="iron headz ironheadz big pun">
+          <div class="fighter-portrait">
+            <svg viewBox="0 0 280 200"><use href="#portrait-generic"/></svg>
+            <div class="portrait-shine"></div>
+          </div>
+          <div class="fighter-body">
+            <div class="fighter-rank">CIRCUIT FIGHTER</div>
+            <div class="fighter-name">IRON HEADZ</div>
+            <div class="fighter-real">Original Character</div>
+            <div class="fighter-style">Wrestling / Street Fighting</div>
+            <p class="fighter-bio">One of the circuit's earliest champions. Iron Headz built his reputation by taking punishment that would stop anyone else and just laughing it off.</p>
+            <div class="fighter-tags"><span>Original</span></div>
+          </div>
+        </div>
+
+        <div class="fighter-card" data-tier="circuit" data-group="circuit" data-name="pockets original circuit baller">
+          <div class="fighter-portrait">
+            <svg viewBox="0 0 280 200"><use href="#portrait-generic"/></svg>
+            <div class="portrait-shine"></div>
+          </div>
+          <div class="fighter-body">
+            <div class="fighter-rank">CIRCUIT FIGHTER</div>
+            <div class="fighter-name">POCKETS</div>
+            <div class="fighter-real">Original Character</div>
+            <div class="fighter-style">Street Fighting</div>
+            <p class="fighter-bio">Fights for the money, nothing more. Pockets will work for whoever pays — making him a wildcard in the circuit's political landscape.</p>
+            <div class="fighter-tags"><span>Original</span></div>
+          </div>
+        </div>
+
+        <div class="fighter-card" data-tier="circuit" data-group="circuit" data-name="chiang original circuit martial arts">
+          <div class="fighter-portrait">
+            <svg viewBox="0 0 280 200"><use href="#portrait-generic"/></svg>
+            <div class="portrait-shine"></div>
+          </div>
+          <div class="fighter-body">
+            <div class="fighter-rank">CIRCUIT FIGHTER</div>
+            <div class="fighter-name">CHIANG</div>
+            <div class="fighter-real">Original Character</div>
+            <div class="fighter-style">Martial Arts / Kickboxing</div>
+            <p class="fighter-bio">Chinatown's most disciplined fighter. Chiang trained for decades before entering the circuit and came in already at the top of his game.</p>
+            <div class="fighter-tags"><span>Original</span></div>
+          </div>
+        </div>
+
+        <div class="fighter-card" data-tier="circuit" data-group="circuit" data-name="blkhrt blk hrt original dark">
+          <div class="fighter-portrait">
+            <svg viewBox="0 0 280 200"><use href="#portrait-generic"/></svg>
+            <div class="portrait-shine"></div>
+          </div>
+          <div class="fighter-body">
+            <div class="fighter-rank">CIRCUIT FIGHTER</div>
+            <div class="fighter-name">BLK HRT</div>
+            <div class="fighter-real">Original Character</div>
+            <div class="fighter-style">Submissions / Street Fighting</div>
+            <p class="fighter-bio">Nobody knows where this fighter came from. BLK HRT appeared in the circuit one night and hasn't lost since. Cold, methodical, and utterly ruthless.</p>
+            <div class="fighter-tags"><span>Original</span><span>Mysterious</span></div>
+          </div>
+        </div>
+
+        <div class="fighter-card" data-tier="circuit" data-group="circuit" data-name="krondon original musician wrestler">
+          <div class="fighter-portrait">
+            <svg viewBox="0 0 280 200"><use href="#portrait-generic"/></svg>
+            <div class="portrait-shine"></div>
+          </div>
+          <div class="fighter-body">
+            <div class="fighter-rank">CIRCUIT FIGHTER</div>
+            <div class="fighter-name">KRONDON</div>
+            <div class="fighter-real">Krondon — Jonathan Long</div>
+            <div class="fighter-style">Street Fighting / Wrestling</div>
+            <p class="fighter-bio">The Beat Junkies affiliated MC who fights with the same raw energy as his music. Krondon is unexpected at every turn.</p>
+            <div class="fighter-tags"><span>Beat Junkies</span></div>
+          </div>
+        </div>
+
+        <div class="fighter-card" data-tier="circuit" data-group="circuit" data-name="comp original circuit fighter">
+          <div class="fighter-portrait">
+            <svg viewBox="0 0 280 200"><use href="#portrait-generic"/></svg>
+            <div class="portrait-shine"></div>
+          </div>
+          <div class="fighter-body">
+            <div class="fighter-rank">CIRCUIT FIGHTER</div>
+            <div class="fighter-name">COMP</div>
+            <div class="fighter-real">Original Character</div>
+            <div class="fighter-style">Kickboxing</div>
+            <p class="fighter-bio">One of the circuit's pure technicians. Comp studies opponents before they even step in the ring and exploits every weakness he finds.</p>
+            <div class="fighter-tags"><span>Original</span></div>
+          </div>
+        </div>
+
+        <div class="fighter-card" data-tier="circuit" data-group="circuit" data-name="masa original circuit brooklyn">
+          <div class="fighter-portrait">
+            <svg viewBox="0 0 280 200"><use href="#portrait-generic"/></svg>
+            <div class="portrait-shine"></div>
+          </div>
+          <div class="fighter-body">
+            <div class="fighter-rank">CIRCUIT FIGHTER</div>
+            <div class="fighter-name">MASA</div>
+            <div class="fighter-real">Original Character</div>
+            <div class="fighter-style">Martial Arts</div>
+            <p class="fighter-bio">Brooklyn's secret weapon in the underground. Masa's martial arts background makes him one of the most technically gifted fighters in the circuit.</p>
+            <div class="fighter-tags"><span>Original</span></div>
+          </div>
+        </div>
+
+        <div class="fighter-card" data-tier="circuit" data-group="circuit" data-name="the game jayceon terrell taylor compton">
+          <div class="fighter-portrait">
+            <svg viewBox="0 0 280 200"><use href="#portrait-generic"/></svg>
+            <div class="portrait-shine"></div>
+          </div>
+          <div class="fighter-body">
+            <div class="fighter-rank">WEST COAST WILDCARD</div>
+            <div class="fighter-name">THE GAME</div>
+            <div class="fighter-real">Jayceon Terrell Taylor</div>
+            <div class="fighter-style">Street Fighting / Kickboxing</div>
+            <p class="fighter-bio">The Compton-raised lyricist brought West Coast aggression to New York's underground. The Game fights like he raps — with everything, no holding back.</p>
+            <div class="fighter-tags"><span>G-Unit</span><span>Compton</span></div>
+          </div>
+        </div>
+
+        <div class="fighter-card" data-tier="circuit" data-group="circuit" data-name="baxter original circuit queensbridge">
+          <div class="fighter-portrait">
+            <svg viewBox="0 0 280 200"><use href="#portrait-generic"/></svg>
+            <div class="portrait-shine"></div>
+          </div>
+          <div class="fighter-body">
+            <div class="fighter-rank">CIRCUIT FIGHTER</div>
+            <div class="fighter-name">BAXTER</div>
+            <div class="fighter-real">Original Character</div>
+            <div class="fighter-style">Wrestling / Submissions</div>
+            <p class="fighter-bio">Queensbridge's grappling specialist. Once Baxter gets his hands on you, it's a question of when — not if — you tap out.</p>
+            <div class="fighter-tags"><span>Original</span></div>
+          </div>
+        </div>
+
+        <div class="fighter-card" data-tier="circuit" data-group="circuit" data-name="esai morales chente el bravo">
+          <div class="fighter-portrait">
+            <svg viewBox="0 0 280 200"><use href="#portrait-generic"/></svg>
+            <div class="portrait-shine"></div>
+          </div>
+          <div class="fighter-body">
+            <div class="fighter-rank">CIRCUIT FIGHTER</div>
+            <div class="fighter-name">ESAI</div>
+            <div class="fighter-real">Esai Morales</div>
+            <div class="fighter-style">Kickboxing / Martial Arts</div>
+            <p class="fighter-bio">The actor brings authenticity to the underground. Esai's combat training for film roles translated perfectly into real fighting technique in the circuit.</p>
+            <div class="fighter-tags"><span>Actor</span></div>
+          </div>
+        </div>
+
+        <div class="fighter-card" data-tier="circuit" data-group="circuit" data-name="peewee kirkland original circuit harlem">
+          <div class="fighter-portrait">
+            <svg viewBox="0 0 280 200"><use href="#portrait-generic"/></svg>
+            <div class="portrait-shine"></div>
+          </div>
+          <div class="fighter-body">
+            <div class="fighter-rank">HARLEM LEGEND</div>
+            <div class="fighter-name">PEEWEE</div>
+            <div class="fighter-real">Original Character</div>
+            <div class="fighter-style">Street Fighting</div>
+            <p class="fighter-bio">Don't let the name fool you. Peewee is one of the most feared fighters in Harlem — fast hands, dirty tactics, and zero hesitation.</p>
+            <div class="fighter-tags"><span>Harlem</span></div>
+          </div>
+        </div>
+
+      </div>
+    </div><!-- /circuit group -->
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+  GIRLFRIENDS
+════════════════════════════════════════════ -->
+<section class="section section-girlfriends" id="girlfriends">
+  <span class="section-label">04 / Girlfriends</span>
+  <div class="container">
+    <h2 class="section-title reveal-up centered">Your Girl<br/>In Your Corner</h2>
+    <p class="body-text centered reveal-up delay-1">Build relationships with one of six celebrity women. Your girlfriend cheers you on from the sidelines — and can intervene if a fight turns dirty.</p>
+
+    <div class="fighters-grid gf-grid" style="margin-top:3rem">
+
+      <div class="fighter-card" data-tier="gf" data-group="gf" data-name="lil kim kimberly jones brooklyn queen bee">
+        <div class="fighter-portrait">
+          <svg viewBox="0 0 280 200"><use href="#portrait-generic"/></svg>
+          <div class="portrait-shine"></div>
+        </div>
+        <div class="fighter-body">
+          <div class="fighter-rank">BROOKLYN — QUEEN BEE</div>
+          <div class="fighter-name">LIL' KIM</div>
+          <div class="fighter-real">Kimberly Jones</div>
+          <div class="fighter-style">Ride-or-Die</div>
+          <p class="fighter-bio">The Queen Bee of Brooklyn is D-Mob's right-hand woman. Fearless, loyal, and willing to get involved when the fight gets dirty. The most devoted girlfriend in the circuit.</p>
+          <div class="fighter-tags"><span>Story Role</span><span>Unlockable</span><span>Junior M.A.F.I.A.</span></div>
+        </div>
+      </div>
+
+      <div class="fighter-card" data-tier="gf" data-group="gf" data-name="carmen electra tara leigh patrick playboy">
+        <div class="fighter-portrait">
+          <svg viewBox="0 0 280 200"><use href="#portrait-generic"/></svg>
+          <div class="portrait-shine"></div>
+        </div>
+        <div class="fighter-body">
+          <div class="fighter-rank">CELEBRITY — DIVA</div>
+          <div class="fighter-name">CARMEN ELECTRA</div>
+          <div class="fighter-real">Tara Leigh Patrick</div>
+          <div class="fighter-style">Glamour</div>
+          <p class="fighter-bio">The ultimate arm candy for New York's underground. Carmen brings high-profile attention and star power to whoever she's with — and has no problem using it.</p>
+          <div class="fighter-tags"><span>Celebrity</span><span>Baywatch</span></div>
+        </div>
+      </div>
+
+      <div class="fighter-card" data-tier="gf" data-group="gf" data-name="kimora lee simmons phat farm russell">
+        <div class="fighter-portrait">
+          <svg viewBox="0 0 280 200"><use href="#portrait-generic"/></svg>
+          <div class="portrait-shine"></div>
+        </div>
+        <div class="fighter-body">
+          <div class="fighter-rank">FASHION ROYALTY</div>
+          <div class="fighter-name">KIMORA</div>
+          <div class="fighter-real">Kimora Lee Simmons</div>
+          <div class="fighter-style">Status</div>
+          <p class="fighter-bio">Baby Phat's founder and the queen of hip-hop fashion brings enormous social capital to the underground circuit. Being seen with Kimora changes your status overnight.</p>
+          <div class="fighter-tags"><span>Baby Phat</span><span>Fashion</span></div>
+        </div>
+      </div>
+
+      <div class="fighter-card" data-tier="gf" data-group="gf" data-name="shawnna rashawnna hopkings ludacris DTP">
+        <div class="fighter-portrait">
+          <svg viewBox="0 0 280 200"><use href="#portrait-generic"/></svg>
+          <div class="portrait-shine"></div>
+        </div>
+        <div class="fighter-body">
+          <div class="fighter-rank">DTP — RIDE-OR-DIE</div>
+          <div class="fighter-name">SHAWNNA</div>
+          <div class="fighter-real">Rashawnna Hopkins</div>
+          <div class="fighter-style">Street Loyal</div>
+          <p class="fighter-bio">Ludacris's DTP labelmate is the most genuinely street-savvy girlfriend in the game. Shawnna grew up in these blocks and knows how the underground works from the inside.</p>
+          <div class="fighter-tags"><span>DTP</span><span>Ludacris</span></div>
+        </div>
+      </div>
+
+      <div class="fighter-card" data-tier="gf" data-group="gf" data-name="cindy j original character circuit girl">
+        <div class="fighter-portrait">
+          <svg viewBox="0 0 280 200"><use href="#portrait-generic"/></svg>
+          <div class="portrait-shine"></div>
+        </div>
+        <div class="fighter-body">
+          <div class="fighter-rank">ORIGINAL — CIRCUIT GIRL</div>
+          <div class="fighter-name">CINDY J</div>
+          <div class="fighter-real">Original Character</div>
+          <div class="fighter-style">Independent</div>
+          <p class="fighter-bio">The underground's original girl Friday. Cindy J knows everyone in the circuit and can navigate political situations that would stop anyone else cold.</p>
+          <div class="fighter-tags"><span>Original</span><span>Circuit Veteran</span></div>
+        </div>
+      </div>
+
+      <div class="fighter-card" data-tier="gf" data-group="gf" data-name="shaniqua original character street girl">
+        <div class="fighter-portrait">
+          <svg viewBox="0 0 280 200"><use href="#portrait-generic"/></svg>
+          <div class="portrait-shine"></div>
+        </div>
+        <div class="fighter-body">
+          <div class="fighter-rank">ORIGINAL — STREET LOYAL</div>
+          <div class="fighter-name">SHANIQUA</div>
+          <div class="fighter-real">Original Character</div>
+          <div class="fighter-style">Hood Love</div>
+          <p class="fighter-bio">Brooklyn-born and New York-forged. Shaniqua represents the city's soul — real, unfiltered, and completely devoted to whoever earns her loyalty.</p>
+          <div class="fighter-tags"><span>Original</span><span>Brooklyn</span></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="section-divider">
+  <div class="divider-text">THE VENUES &nbsp;·&nbsp; NEW YORK CITY &nbsp;·&nbsp; FIGHT ANYWHERE &nbsp;·&nbsp; EVERY ARENA A WEAPON &nbsp;·&nbsp;</div>
+</div>
+
+<!-- ═══════════════════════════════════════════
+  VENUES
+════════════════════════════════════════════ -->
+<section class="section section-venues" id="venues">
+  <span class="section-label">05 / Venues</span>
+  <div class="container">
+    <h2 class="section-title reveal-up">The City<br/>Is Your Arena</h2>
+    <p class="body-text reveal-up delay-1">Twenty locations across New York — each with unique hazards, crowd interactions, and environmental weapons. The city doesn't just watch. It participates.</p>
+
+    <div class="venues-grid-view">
+
+      <div class="venue-card reveal-up delay-1">
+        <div class="venue-card-art">
+          <svg viewBox="0 0 280 160" xmlns="http://www.w3.org/2000/svg">
+            <rect width="280" height="160" fill="#08080f"/>
+            <rect x="0" y="100" width="280" height="60" fill="#0a0a14"/>
+            <!-- club floor tiles -->
+            <rect x="0" y="110" width="40" height="50" fill="#0d0d1a" opacity=".7"/>
+            <rect x="40" y="110" width="40" height="50" fill="#070712" opacity=".7"/>
+            <rect x="80" y="110" width="40" height="50" fill="#0d0d1a" opacity=".7"/>
+            <rect x="120" y="110" width="40" height="50" fill="#070712" opacity=".7"/>
+            <!-- neon lines -->
+            <line x1="0" y1="100" x2="280" y2="100" stroke="#f5c518" stroke-width="1.5" opacity=".4"/>
+            <circle cx="50" cy="40" r="15" fill="#f5c518" opacity=".08"/>
+            <circle cx="140" cy="20" r="20" fill="#f5c518" opacity=".06"/>
+            <circle cx="230" cy="40" r="15" fill="#f5c518" opacity=".08"/>
+            <text x="140" y="80" text-anchor="middle" font-family="'Bebas Neue',sans-serif" font-size="22" fill="#f5c518" opacity=".7" letter-spacing="3">BURLINGTON</text>
+          </svg>
+        </div>
+        <div class="venue-card-body">
+          <div class="venue-card-name">BURLINGTON</div>
+          <div class="venue-card-loc">Manhattan Club Circuit</div>
+          <span class="venue-card-type">Club Fight</span>
+          <div class="venue-hazards" style="margin-top:.75rem">
+            <span class="hazard">Crowd Slam</span><span class="hazard">Bottle Weapons</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="venue-card reveal-up delay-2">
+        <div class="venue-card-art">
+          <svg viewBox="0 0 280 160" xmlns="http://www.w3.org/2000/svg">
+            <rect width="280" height="160" fill="#050508"/>
+            <!-- rooftop skyline -->
+            <rect x="0" y="80" width="280" height="80" fill="#080810"/>
+            <rect x="15" y="40" width="25" height="120" fill="#0a0a14"/>
+            <rect x="50" y="20" width="30" height="140" fill="#0d0d1a"/>
+            <rect x="200" y="30" width="35" height="130" fill="#0a0a14"/>
+            <rect x="245" y="50" width="22" height="110" fill="#0d0d1a"/>
+            <!-- windows -->
+            <rect x="20" y="45" width="4" height="4" fill="#f5c518" opacity=".5"/>
+            <rect x="28" y="45" width="4" height="4" fill="#f5c518" opacity=".3"/>
+            <rect x="55" y="26" width="4" height="4" fill="#f5c518" opacity=".6"/>
+            <!-- rooftop edge -->
+            <rect x="80" y="90" width="120" height="4" fill="#222"/>
+            <text x="140" y="76" text-anchor="middle" font-family="'Bebas Neue',sans-serif" font-size="18" fill="#ffffff" opacity=".5" letter-spacing="2">ROOFTOP</text>
+          </svg>
+        </div>
+        <div class="venue-card-body">
+          <div class="venue-card-name">ROOFTOP</div>
+          <div class="venue-card-loc">South Bronx</div>
+          <span class="venue-card-type">Hazard Match</span>
+          <div class="venue-hazards" style="margin-top:.75rem">
+            <span class="hazard">Edge Throw</span><span class="hazard">Knockoff</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="venue-card reveal-up delay-3">
+        <div class="venue-card-art">
+          <svg viewBox="0 0 280 160" xmlns="http://www.w3.org/2000/svg">
+            <rect width="280" height="160" fill="#080a05"/>
+            <!-- subway rails -->
+            <rect x="0" y="120" width="280" height="40" fill="#0a0c06"/>
+            <line x1="0" y1="130" x2="280" y2="130" stroke="#222" stroke-width="3"/>
+            <line x1="0" y1="145" x2="280" y2="145" stroke="#222" stroke-width="3"/>
+            <!-- platform edge -->
+            <rect x="0" y="100" width="280" height="5" fill="#1a1a1a"/>
+            <rect x="0" y="98" width="280" height="3" fill="#f5c518" opacity=".3"/>
+            <!-- tile walls -->
+            <rect x="0" y="0" width="280" height="100" fill="#0c0e08"/>
+            <path d="M0 20 H280 M0 40 H280 M0 60 H280 M0 80 H280" stroke="#141614" stroke-width="1"/>
+            <text x="140" y="65" text-anchor="middle" font-family="'Bebas Neue',sans-serif" font-size="20" fill="#f5c518" opacity=".6" letter-spacing="3">SUBWAY</text>
+          </svg>
+        </div>
+        <div class="venue-card-body">
+          <div class="venue-card-name">SUBWAY</div>
+          <div class="venue-card-loc">Manhattan Transit</div>
+          <span class="venue-card-type">Rail Fight</span>
+          <div class="venue-hazards" style="margin-top:.75rem">
+            <span class="hazard">Train Impact</span><span class="hazard">Third Rail</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="venue-card reveal-up delay-1">
+        <div class="venue-card-art">
+          <svg viewBox="0 0 280 160" xmlns="http://www.w3.org/2000/svg">
+            <rect width="280" height="160" fill="#0a0505"/>
+            <rect x="0" y="90" width="280" height="70" fill="#0c0606"/>
+            <!-- cage/chain link pattern -->
+            <path d="M0 0 L20 20 M10 0 L30 20 M20 0 L40 20 M30 0 L50 20 M40 0 L60 20 M50 0 L70 20 M60 0 L80 20 M70 0 L90 20 M80 0 L100 20 M90 0 L110 20 M100 0 L120 20 M110 0 L130 20 M120 0 L140 20 M130 0 L150 20 M140 0 L160 20 M150 0 L170 20 M160 0 L180 20 M170 0 L190 20 M180 0 L200 20 M190 0 L210 20 M200 0 L220 20 M210 0 L230 20 M220 0 L250 20 M230 0 L260 20 M240 0 L270 20 M250 0 L280 20 M260 0 L280 10" stroke="#1a1a1a" stroke-width="1.5" opacity=".5"/>
+            <text x="140" y="75" text-anchor="middle" font-family="'Bebas Neue',sans-serif" font-size="20" fill="#ff4400" opacity=".6" letter-spacing="2">CHAIN FIGHT</text>
+          </svg>
+        </div>
+        <div class="venue-card-body">
+          <div class="venue-card-name">CAGE</div>
+          <div class="venue-card-loc">Underground Warehouse</div>
+          <span class="venue-card-type">Cage Match</span>
+          <div class="venue-hazards" style="margin-top:.75rem">
+            <span class="hazard">Fence Slam</span><span class="hazard">Barbed Wire</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="venue-card reveal-up delay-2">
+        <div class="venue-card-art">
+          <svg viewBox="0 0 280 160" xmlns="http://www.w3.org/2000/svg">
+            <rect width="280" height="160" fill="#06080a"/>
+            <!-- pier / dock -->
+            <rect x="0" y="110" width="280" height="50" fill="#040608"/>
+            <!-- water effect -->
+            <path d="M0 120 Q35 115 70 120 Q105 125 140 120 Q175 115 210 120 Q245 125 280 120" stroke="#1a2840" stroke-width="2" fill="none"/>
+            <path d="M0 130 Q35 125 70 130 Q105 135 140 130 Q175 125 210 130 Q245 135 280 130" stroke="#1a2840" stroke-width="1.5" fill="none"/>
+            <!-- dock planks -->
+            <path d="M0 108 H280" stroke="#1a1a14" stroke-width="3"/>
+            <path d="M30 90 L30 160 M60 90 L60 160 M90 90 L90 160 M120 90 L120 160 M150 90 L150 160 M180 90 L180 160 M210 90 L210 160 M240 90 L240 160" stroke="#141410" stroke-width="1.5"/>
+            <text x="140" y="75" text-anchor="middle" font-family="'Bebas Neue',sans-serif" font-size="18" fill="#7eb8d4" opacity=".5" letter-spacing="3">PIER</text>
+          </svg>
+        </div>
+        <div class="venue-card-body">
+          <div class="venue-card-name">THE PIER</div>
+          <div class="venue-card-loc">New Jersey Docks</div>
+          <span class="venue-card-type">Dockside</span>
+          <div class="venue-hazards" style="margin-top:.75rem">
+            <span class="hazard">Water Throw</span><span class="hazard">Plank Weapons</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="venue-card reveal-up delay-3">
+        <div class="venue-card-art">
+          <svg viewBox="0 0 280 160" xmlns="http://www.w3.org/2000/svg">
+            <rect width="280" height="160" fill="#080508"/>
+            <!-- church interior / cathedral -->
+            <path d="M140 10 L160 40 L140 35 L120 40Z" fill="#0e0a0e"/>
+            <rect x="60" y="40" width="160" height="120" fill="#0a080a"/>
+            <!-- stained glass hint -->
+            <rect x="110" y="50" width="20" height="35" rx="10" fill="#200020" opacity=".8"/>
+            <rect x="150" y="50" width="20" height="35" rx="10" fill="#200020" opacity=".8"/>
+            <rect x="110" y="51" width="20" height="34" rx="9" fill="none" stroke="#6600aa" stroke-width="1" opacity=".4"/>
+            <rect x="150" y="51" width="20" height="34" rx="9" fill="none" stroke="#6600aa" stroke-width="1" opacity=".4"/>
+            <text x="140" y="120" text-anchor="middle" font-family="'Bebas Neue',sans-serif" font-size="16" fill="#9933cc" opacity=".5" letter-spacing="2">CHURCH</text>
+          </svg>
+        </div>
+        <div class="venue-card-body">
+          <div class="venue-card-name">CHURCH</div>
+          <div class="venue-card-loc">Harlem</div>
+          <span class="venue-card-type">Spiritual Ground</span>
+          <div class="venue-hazards" style="margin-top:.75rem">
+            <span class="hazard">Pew Slam</span><span class="hazard">Candle Fire</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="venue-card reveal-up delay-1">
+        <div class="venue-card-art">
+          <svg viewBox="0 0 280 160" xmlns="http://www.w3.org/2000/svg">
+            <rect width="280" height="160" fill="#060810"/>
+            <!-- basketball court lines -->
+            <rect x="0" y="80" width="280" height="80" fill="#080a12"/>
+            <line x1="140" y1="80" x2="140" y2="160" stroke="#1a1a2a" stroke-width="1.5"/>
+            <ellipse cx="140" cy="120" rx="30" ry="30" fill="none" stroke="#1a1a2a" stroke-width="1.5"/>
+            <ellipse cx="70" cy="160" rx="20" ry="20" fill="none" stroke="#1a1a2a" stroke-width="1.5"/>
+            <ellipse cx="210" cy="160" rx="20" ry="20" fill="none" stroke="#1a1a2a" stroke-width="1.5"/>
+            <!-- backboard hint -->
+            <rect x="125" y="10" width="30" height="20" rx="2" fill="#111" stroke="#333" stroke-width="1"/>
+            <rect x="132" y="22" width="16" height="12" rx="1" fill="none" stroke="#444" stroke-width="1"/>
+            <text x="140" y="72" text-anchor="middle" font-family="'Bebas Neue',sans-serif" font-size="16" fill="#ff8c00" opacity=".5" letter-spacing="2">COURT</text>
+          </svg>
+        </div>
+        <div class="venue-card-body">
+          <div class="venue-card-name">BASKETBALL COURT</div>
+          <div class="venue-card-loc">Brooklyn</div>
+          <span class="venue-card-type">Street Court</span>
+          <div class="venue-hazards" style="margin-top:.75rem">
+            <span class="hazard">Crowd Ring</span><span class="hazard">Fence Slam</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="venue-card reveal-up delay-2">
+        <div class="venue-card-art">
+          <svg viewBox="0 0 280 160" xmlns="http://www.w3.org/2000/svg">
+            <rect width="280" height="160" fill="#080a06"/>
+            <!-- garden arena seats -->
+            <ellipse cx="140" cy="130" rx="130" ry="40" fill="#0a0c08"/>
+            <ellipse cx="140" cy="120" rx="100" ry="30" fill="#0c0e0a"/>
+            <!-- arena floor glow -->
+            <ellipse cx="140" cy="115" rx="60" ry="20" fill="#f5c518" opacity=".04"/>
+            <!-- spotlights -->
+            <path d="M60 0 L80 110" stroke="#f5c518" stroke-width="1" opacity=".1"/>
+            <path d="M140 0 L140 110" stroke="#f5c518" stroke-width="2" opacity=".08"/>
+            <path d="M220 0 L160 110" stroke="#f5c518" stroke-width="1" opacity=".1"/>
+            <text x="140" y="70" text-anchor="middle" font-family="'Bebas Neue',sans-serif" font-size="14" fill="#f5c518" opacity=".6" letter-spacing="2">MADISON SQ GARDEN</text>
+          </svg>
+        </div>
+        <div class="venue-card-body">
+          <div class="venue-card-name">MADISON SQ. GARDEN</div>
+          <div class="venue-card-loc">Midtown Manhattan</div>
+          <span class="venue-card-type">Arena</span>
+          <div class="venue-hazards" style="margin-top:.75rem">
+            <span class="hazard">Major Crowd</span><span class="hazard">Stage Props</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <p class="body-text reveal-up" style="margin-top:3rem;color:var(--grey)">
+      Plus: Babylon Club, Def Jam Office, Gun Hill Road, 125th Street, Red Hook, The Tunnel, Carter's Tower, Zombie Car Lot, The Stash House, Highway, Crow's Penthouse, and more.
+    </p>
+  </div>
+</section>
+
+<div class="section-divider alt">
+  <div class="divider-text">THE SOUNDTRACK &nbsp;·&nbsp; 28 TRACKS &nbsp;·&nbsp; HIP-HOP DEFINES AN ERA &nbsp;·&nbsp;</div>
+</div>
+
+<!-- ═══════════════════════════════════════════
+  SOUNDTRACK
+════════════════════════════════════════════ -->
+<section class="section section-soundtrack" id="soundtrack">
+  <span class="section-label">06 / Soundtrack</span>
+  <div class="container">
+    <h2 class="section-title reveal-up centered">The Soundtrack<br/>to the Streets</h2>
+    <p class="body-text centered reveal-up delay-1">28 tracks selected at the peak of hip-hop's golden era. This wasn't background music — it was the heartbeat of New York's underground.</p>
+
+    <div class="soundtrack-grid">
+      <div class="track-card reveal-up delay-1"><div class="track-num">01</div><div class="track-info"><div class="track-title">Get It Poppin'</div><div class="track-artist">Fat Joe ft. Nelly</div></div><div class="track-bar"><div class="track-fill"></div></div></div>
+      <div class="track-card reveal-up delay-2"><div class="track-num">02</div><div class="track-info"><div class="track-title">Mosh</div><div class="track-artist">Eminem</div></div><div class="track-bar"><div class="track-fill"></div></div></div>
+      <div class="track-card reveal-up delay-3"><div class="track-num">03</div><div class="track-info"><div class="track-title">Lean Back</div><div class="track-artist">Terror Squad</div></div><div class="track-bar"><div class="track-fill"></div></div></div>
+      <div class="track-card reveal-up delay-1"><div class="track-num">04</div><div class="track-info"><div class="track-title">Goodies</div><div class="track-artist">Ciara ft. Petey Pablo</div></div><div class="track-bar"><div class="track-fill"></div></div></div>
+      <div class="track-card reveal-up delay-2"><div class="track-num">05</div><div class="track-info"><div class="track-title">Get Low</div><div class="track-artist">Lil Jon & Ying Yang Twins</div></div><div class="track-bar"><div class="track-fill"></div></div></div>
+      <div class="track-card reveal-up delay-3"><div class="track-num">06</div><div class="track-info"><div class="track-title">In Da Club</div><div class="track-artist">50 Cent</div></div><div class="track-bar"><div class="track-fill"></div></div></div>
+      <div class="track-card reveal-up delay-1"><div class="track-num">07</div><div class="track-info"><div class="track-title">Work It</div><div class="track-artist">Missy Elliott</div></div><div class="track-bar"><div class="track-fill"></div></div></div>
+      <div class="track-card reveal-up delay-2"><div class="track-num">08</div><div class="track-info"><div class="track-title">Stand Up</div><div class="track-artist">Ludacris ft. Shawnna</div></div><div class="track-bar"><div class="track-fill"></div></div></div>
+      <div class="track-card reveal-up delay-3"><div class="track-num">09</div><div class="track-info"><div class="track-title">Lose Yourself</div><div class="track-artist">Eminem</div></div><div class="track-bar"><div class="track-fill"></div></div></div>
+      <div class="track-card reveal-up delay-1"><div class="track-num">10</div><div class="track-info"><div class="track-title">Right Thurr</div><div class="track-artist">Chingy</div></div><div class="track-bar"><div class="track-fill"></div></div></div>
+      <div class="track-card reveal-up delay-2"><div class="track-num">11</div><div class="track-info"><div class="track-title">Rap Superstar</div><div class="track-artist">Cypress Hill</div></div><div class="track-bar"><div class="track-fill"></div></div></div>
+      <div class="track-card reveal-up delay-3"><div class="track-num">12</div><div class="track-info"><div class="track-title">Yeah!</div><div class="track-artist">Usher ft. Lil Jon</div></div><div class="track-bar"><div class="track-fill"></div></div></div>
+      <div class="track-card reveal-up delay-1"><div class="track-num">13</div><div class="track-info"><div class="track-title">Never Scared</div><div class="track-artist">Bone Crusher ft. Killer Mike</div></div><div class="track-bar"><div class="track-fill"></div></div></div>
+      <div class="track-card reveal-up delay-2"><div class="track-num">14</div><div class="track-info"><div class="track-title">Like a Pimp</div><div class="track-artist">David Banner ft. Lil Flip</div></div><div class="track-bar"><div class="track-fill"></div></div></div>
+      <div class="track-card reveal-up delay-3"><div class="track-num">15</div><div class="track-info"><div class="track-title">Crazy in Love</div><div class="track-artist">Beyoncé ft. Jay-Z</div></div><div class="track-bar"><div class="track-fill"></div></div></div>
+      <div class="track-card reveal-up delay-1"><div class="track-num">16</div><div class="track-info"><div class="track-title">Whoa!</div><div class="track-artist">Black Rob</div></div><div class="track-bar"><div class="track-fill"></div></div></div>
+      <div class="track-card reveal-up delay-2"><div class="track-num">17</div><div class="track-info"><div class="track-title">Move Bitch</div><div class="track-artist">Ludacris</div></div><div class="track-bar"><div class="track-fill"></div></div></div>
+      <div class="track-card reveal-up delay-3"><div class="track-num">18</div><div class="track-info"><div class="track-title">Drop It Like It's Hot</div><div class="track-artist">Snoop Dogg ft. Pharrell</div></div><div class="track-bar"><div class="track-fill"></div></div></div>
+      <div class="track-card reveal-up delay-1"><div class="track-num">19</div><div class="track-info"><div class="track-title">Numb/Encore</div><div class="track-artist">Jay-Z & Linkin Park</div></div><div class="track-bar"><div class="track-fill"></div></div></div>
+      <div class="track-card reveal-up delay-2"><div class="track-num">20</div><div class="track-info"><div class="track-title">I Like That</div><div class="track-artist">Houston ft. Chingy & Nate Dogg</div></div><div class="track-bar"><div class="track-fill"></div></div></div>
+      <div class="track-card reveal-up delay-3"><div class="track-num">21</div><div class="track-info"><div class="track-title">Pump It Up</div><div class="track-artist">Joe Budden</div></div><div class="track-bar"><div class="track-fill"></div></div></div>
+      <div class="track-card reveal-up delay-1"><div class="track-num">22</div><div class="track-info"><div class="track-title">Still Fly</div><div class="track-artist">Big Tymers</div></div><div class="track-bar"><div class="track-fill"></div></div></div>
+      <div class="track-card reveal-up delay-2"><div class="track-num">23</div><div class="track-info"><div class="track-title">Tipsy</div><div class="track-artist">J-Kwon</div></div><div class="track-bar"><div class="track-fill"></div></div></div>
+      <div class="track-card reveal-up delay-3"><div class="track-num">24</div><div class="track-info"><div class="track-title">Headsprung</div><div class="track-artist">LL Cool J</div></div><div class="track-bar"><div class="track-fill"></div></div></div>
+      <div class="track-card reveal-up delay-1"><div class="track-num">25</div><div class="track-info"><div class="track-title">X Gon' Give It To Ya</div><div class="track-artist">DMX</div></div><div class="track-bar"><div class="track-fill"></div></div></div>
+      <div class="track-card reveal-up delay-2"><div class="track-num">26</div><div class="track-info"><div class="track-title">Temperature</div><div class="track-artist">Sean Paul</div></div><div class="track-bar"><div class="track-fill"></div></div></div>
+      <div class="track-card reveal-up delay-3"><div class="track-num">27</div><div class="track-info"><div class="track-title">Wait (The Whisper Song)</div><div class="track-artist">Ying Yang Twins</div></div><div class="track-bar"><div class="track-fill"></div></div></div>
+      <div class="track-card reveal-up delay-1"><div class="track-num">28</div><div class="track-info"><div class="track-title">My Band</div><div class="track-artist">D12</div></div><div class="track-bar"><div class="track-fill"></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+  LEGACY
+════════════════════════════════════════════ -->
+<section class="section section-legacy" id="legacy">
+  <span class="section-label">07 / Legacy</span>
+  <div class="container">
+    <h2 class="section-title reveal-up">Why We Still<br/>Talk About It</h2>
+    <p class="body-text reveal-up delay-1">Twenty years on, Fight for NY remains the gold standard for licensed fighting games — and a cultural artifact that perfectly captured a moment in hip-hop history that can never be recreated.</p>
+
+    <div class="legacy-grid">
+      <div class="legacy-block reveal-up delay-1">
+        <span class="legacy-icon">🎤</span>
+        <div class="legacy-title">Authentic Hip-Hop Integration</div>
+        <p>Unlike most licensed games, Fight for NY had genuine artist buy-in. Method Man, Snoop, Busta — they weren't just there for the check. The game reflects the culture because the artists shaped it.</p>
+      </div>
+      <div class="legacy-block reveal-up delay-2">
+        <span class="legacy-icon">🏙️</span>
+        <div class="legacy-title">New York as a Character</div>
+        <p>From the Bronx rooftops to the Manhattan clubs to the Brooklyn courts, the city itself was the stage. Every venue felt real because it was based on real places with real histories.</p>
+      </div>
+      <div class="legacy-block reveal-up delay-3">
+        <span class="legacy-icon">⚔️</span>
+        <div class="legacy-title">Combat Innovation</div>
+        <p>The style combination system was ahead of its time. Pairing Wrestling with Submissions, or Street Fighting with Martial Arts, created matchup depth that games with twice the budget couldn't match.</p>
+      </div>
+      <div class="legacy-block reveal-up delay-1">
+        <span class="legacy-icon">🎵</span>
+        <div class="legacy-title">Definitive Era Soundtrack</div>
+        <p>Play it now and it's a time machine. Every track was at the peak of its cultural moment in 2004. No other game has captured a specific moment in music history this precisely.</p>
+      </div>
+      <div class="legacy-block reveal-up delay-2">
+        <span class="legacy-icon">📖</span>
+        <div class="legacy-title">Actual Story Mode</div>
+        <p>At a time when fighting games barely had story modes, Fight for NY had a full narrative with choices, character relationships, betrayal, and an ending that landed. It felt like an HBO pilot.</p>
+      </div>
+      <div class="legacy-block reveal-up delay-3">
+        <span class="legacy-icon">💛</span>
+        <div class="legacy-title">Community Legacy</div>
+        <p>Two decades later, fans are still making videos, streaming playthroughs, and petitioning for a sequel. The game created something rare: a community that kept the flame lit indefinitely.</p>
+      </div>
+    </div>
+
+    <div class="closing-quote reveal-up">
+      <blockquote>"The streets of New York will never forget what we built here."</blockquote>
+      <cite>— D-Mob, Def Jam: Fight for NY (2004)</cite>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="footer-bg-text" aria-hidden="true">FIGHT FOR NY</div>
+  <div class="footer-content">
+    <div class="footer-logo">DEF JAM: FIGHT FOR NY</div>
+    <p class="footer-copy">
+      This is an unofficial fan wiki created as a tribute to one of the greatest hip-hop games ever made.
+      Def Jam: Fight for NY is a trademark of Def Jam Recordings and EA Games.
+      All characters, music, and imagery belong to their respective owners.
+    </p>
+    <div class="footer-tags">
+      <span>EA Games · 2004</span>
+      <span>Def Jam Recordings</span>
+      <span>PS2 · Xbox · GameCube</span>
+      <span>Unofficial Fan Resource</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/particles.js"></script>
+
+<!-- Inline SVG sprite loader -->
+<script>
+(function(){
+  // Load SVG sprite definitions inline for <use> to work cross-browser
+  fetch('img/portraits.svg')
+    .then(r => r.text())
+    .then(text => {
+      const div = document.createElement('div');
+      div.style.cssText = 'display:none;position:absolute;';
+      div.innerHTML = text;
+      document.body.insertBefore(div, document.body.firstChild);
+    })
+    .catch(() => {}); // graceful fallback
+})();
+</script>
+
+</body>
+</html>

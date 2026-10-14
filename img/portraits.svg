@@ -1,0 +1,323 @@
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+  <!-- ======================================================
+    DEF JAM WIKI — Character Portrait Sprites
+    Inline SVG definitions, referenced by <use> in index.html
+    Each portrait: 280×200 viewBox, stylized silhouette art
+  ====================================================== -->
+
+  <!-- D-MOB (boss villain) -->
+  <symbol id="portrait-dmob" viewBox="0 0 280 200">
+    <defs>
+      <linearGradient id="gd1" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#1a1200"/>
+        <stop offset="100%" stop-color="#050505"/>
+      </linearGradient>
+    </defs>
+    <rect width="280" height="200" fill="url(#gd1)"/>
+    <!-- city skyline BG -->
+    <rect x="0" y="140" width="280" height="60" fill="#0a0a0a"/>
+    <rect x="10" y="105" width="20" height="95" fill="#111"/>
+    <rect x="40" y="90" width="25" height="110" fill="#111"/>
+    <rect x="75" y="115" width="15" height="85" fill="#0e0e0e"/>
+    <rect x="210" y="95" width="30" height="105" fill="#111"/>
+    <rect x="250" y="110" width="18" height="90" fill="#0e0e0e"/>
+    <!-- windows -->
+    <rect x="44" y="95" width="4" height="4" fill="#f5c518" opacity=".6"/>
+    <rect x="52" y="95" width="4" height="4" fill="#f5c518" opacity=".4"/>
+    <rect x="44" y="106" width="4" height="4" fill="#f5c518" opacity=".3"/>
+    <rect x="214" y="100" width="4" height="4" fill="#f5c518" opacity=".5"/>
+    <rect x="222" y="100" width="4" height="4" fill="#f5c518" opacity=".4"/>
+    <!-- figure silhouette — D-Mob with chains + fur coat -->
+    <ellipse cx="140" cy="62" rx="28" ry="30" fill="#1c1c1c"/>
+    <!-- fur coat shoulders -->
+    <ellipse cx="100" cy="95" rx="22" ry="14" fill="#2a2a2a"/>
+    <ellipse cx="180" cy="95" rx="22" ry="14" fill="#2a2a2a"/>
+    <!-- body -->
+    <rect x="112" y="80" width="56" height="80" rx="4" fill="#1e1e1e"/>
+    <!-- chain -->
+    <path d="M118 85 Q140 100 162 85" stroke="#f5c518" stroke-width="2.5" fill="none" opacity=".8"/>
+    <circle cx="140" cy="100" r="5" fill="#f5c518" opacity=".7"/>
+    <!-- face glow -->
+    <ellipse cx="140" cy="62" rx="18" ry="20" fill="#252525"/>
+    <!-- eyes -->
+    <ellipse cx="133" cy="58" rx="3" ry="2" fill="#f5c518" opacity=".9"/>
+    <ellipse cx="147" cy="58" rx="3" ry="2" fill="#f5c518" opacity=".9"/>
+    <!-- hat -->
+    <rect x="114" y="36" width="52" height="12" rx="2" fill="#111"/>
+    <rect x="108" y="44" width="64" height="6" rx="1" fill="#151515"/>
+    <!-- glow halo -->
+    <ellipse cx="140" cy="62" rx="32" ry="34" fill="none" stroke="#f5c518" stroke-width="1" opacity=".15"/>
+    <text x="140" y="188" text-anchor="middle" font-family="'Bebas Neue',sans-serif" font-size="14" fill="#f5c518" opacity=".8" letter-spacing="3">D-MOB</text>
+  </symbol>
+
+  <!-- CROW / SNOOP DOGG -->
+  <symbol id="portrait-crow" viewBox="0 0 280 200">
+    <defs>
+      <linearGradient id="gc1" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="#0a1015"/>
+        <stop offset="100%" stop-color="#050505"/>
+      </linearGradient>
+    </defs>
+    <rect width="280" height="200" fill="url(#gc1)"/>
+    <!-- blue tint BG shapes -->
+    <ellipse cx="50" cy="180" rx="80" ry="40" fill="#7eb8d4" opacity=".04"/>
+    <ellipse cx="240" cy="30" rx="60" ry="30" fill="#7eb8d4" opacity=".06"/>
+    <!-- lean tall figure -->
+    <ellipse cx="140" cy="58" rx="22" ry="24" fill="#1a1a1a"/>
+    <!-- long fur coat / trench -->
+    <ellipse cx="100" cy="90" rx="18" ry="10" fill="#1e2a30"/>
+    <ellipse cx="180" cy="90" rx="18" ry="10" fill="#1e2a30"/>
+    <rect x="108" y="80" width="64" height="100" rx="6" fill="#1a2530"/>
+    <!-- bandana / head wrap -->
+    <path d="M118 44 Q140 35 162 44 L160 52 Q140 42 120 52Z" fill="#1a3040"/>
+    <!-- eyes piercing -->
+    <ellipse cx="133" cy="56" rx="3" ry="2.5" fill="#7eb8d4" opacity=".85"/>
+    <ellipse cx="148" cy="56" rx="3" ry="2.5" fill="#7eb8d4" opacity=".85"/>
+    <!-- bling chain -->
+    <path d="M120 88 Q140 102 160 88" stroke="#f5c518" stroke-width="2" fill="none" opacity=".6"/>
+    <!-- tall silhouette hat -->
+    <rect x="122" y="28" width="36" height="18" rx="3" fill="#0e1a22"/>
+    <rect x="116" y="42" width="48" height="5" rx="1" fill="#12202a"/>
+    <!-- name glow line -->
+    <rect x="60" y="178" width="160" height="1" fill="#7eb8d4" opacity=".25"/>
+    <text x="140" y="192" text-anchor="middle" font-family="'Bebas Neue',sans-serif" font-size="13" fill="#7eb8d4" opacity=".8" letter-spacing="3">CROW</text>
+  </symbol>
+
+  <!-- BLAZE / METHOD MAN -->
+  <symbol id="portrait-blaze" viewBox="0 0 280 200">
+    <rect width="280" height="200" fill="#0c0a05"/>
+    <!-- fire glow bg -->
+    <ellipse cx="140" cy="160" rx="90" ry="50" fill="#ff8c00" opacity=".06"/>
+    <ellipse cx="140" cy="100" rx="50" ry="60" fill="#f5c518" opacity=".04"/>
+    <!-- bandana over face figure -->
+    <ellipse cx="140" cy="60" rx="26" ry="28" fill="#1c1c1c"/>
+    <ellipse cx="105" cy="92" rx="20" ry="12" fill="#1a1a1a"/>
+    <ellipse cx="175" cy="92" rx="20" ry="12" fill="#1a1a1a"/>
+    <rect x="112" y="78" width="56" height="90" rx="4" fill="#181818"/>
+    <!-- bandana across face -->
+    <rect x="118" y="58" width="44" height="16" rx="8" fill="#2a0a0a" opacity=".9"/>
+    <path d="M118 66 Q140 70 162 66" stroke="#f5c518" stroke-width="1" fill="none" opacity=".3"/>
+    <!-- eyes above bandana -->
+    <ellipse cx="132" cy="52" rx="3" ry="2" fill="#ff8c00" opacity=".9"/>
+    <ellipse cx="148" cy="52" rx="3" ry="2" fill="#ff8c00" opacity=".9"/>
+    <!-- wu-tang W silhouette -->
+    <path d="M125 105 L130 118 L140 110 L150 118 L155 105" stroke="#f5c518" stroke-width="2.5" fill="none" opacity=".55"/>
+    <!-- chain -->
+    <circle cx="140" cy="130" r="6" fill="#f5c518" opacity=".5"/>
+    <text x="140" y="192" text-anchor="middle" font-family="'Bebas Neue',sans-serif" font-size="13" fill="#f5c518" opacity=".8" letter-spacing="3">BLAZE</text>
+  </symbol>
+
+  <!-- MAGIC / BUSTA RHYMES -->
+  <symbol id="portrait-magic" viewBox="0 0 280 200">
+    <rect width="280" height="200" fill="#080810"/>
+    <!-- purple tint accent -->
+    <ellipse cx="200" cy="50" rx="70" ry="40" fill="#9b4dff" opacity=".06"/>
+    <!-- wide powerful build -->
+    <ellipse cx="140" cy="55" rx="30" ry="32" fill="#1a1a1a"/>
+    <ellipse cx="88" cy="90" rx="28" ry="18" fill="#151515"/>
+    <ellipse cx="192" cy="90" rx="28" ry="18" fill="#151515"/>
+    <rect x="100" y="75" width="80" height="100" rx="6" fill="#141414"/>
+    <!-- close-cropped / bald look with thick neck -->
+    <rect x="116" y="26" width="48" height="8" rx="4" fill="#0f0f0f"/>
+    <ellipse cx="140" cy="55" rx="20" ry="22" fill="#202020"/>
+    <!-- intense eyes -->
+    <ellipse cx="131" cy="50" rx="4" ry="3" fill="#ff8c00" opacity=".9"/>
+    <ellipse cx="149" cy="50" rx="4" ry="3" fill="#ff8c00" opacity=".9"/>
+    <!-- power lines / energy -->
+    <path d="M100 80 Q140 70 180 80" stroke="#9b4dff" stroke-width="1.5" fill="none" opacity=".3"/>
+    <path d="M110 100 Q140 90 170 100" stroke="#9b4dff" stroke-width="1" fill="none" opacity=".2"/>
+    <!-- big chain medallion -->
+    <circle cx="140" cy="115" r="9" fill="none" stroke="#f5c518" stroke-width="2.5" opacity=".6"/>
+    <circle cx="140" cy="115" r="4" fill="#f5c518" opacity=".4"/>
+    <text x="140" y="192" text-anchor="middle" font-family="'Bebas Neue',sans-serif" font-size="13" fill="#ff8c00" opacity=".8" letter-spacing="3">MAGIC</text>
+  </symbol>
+
+  <!-- CRACK / FAT JOE -->
+  <symbol id="portrait-crack" viewBox="0 0 280 200">
+    <rect width="280" height="200" fill="#0a0a0a"/>
+    <!-- broad stocky build -->
+    <ellipse cx="140" cy="58" rx="32" ry="30" fill="#1c1c1c"/>
+    <ellipse cx="82" cy="96" rx="32" ry="22" fill="#1a1a1a"/>
+    <ellipse cx="198" cy="96" rx="32" ry="22" fill="#1a1a1a"/>
+    <rect x="94" y="78" width="92" height="100" rx="8" fill="#161616"/>
+    <!-- fitted cap -->
+    <ellipse cx="140" cy="32" rx="34" ry="10" fill="#0f0f0f"/>
+    <rect x="108" y="30" width="64" height="16" rx="4" fill="#111"/>
+    <rect x="106" y="42" width="68" height="5" rx="2" fill="#0d0d0d"/>
+    <rect x="108" y="16" width="64" height="18" rx="6" fill="#111"/>
+    <!-- face -->
+    <ellipse cx="140" cy="60" rx="22" ry="24" fill="#202020"/>
+    <!-- eyes -->
+    <ellipse cx="131" cy="56" rx="3.5" ry="2.5" fill="#f5c518" opacity=".8"/>
+    <ellipse cx="149" cy="56" rx="3.5" ry="2.5" fill="#f5c518" opacity=".8"/>
+    <!-- TS / Terror Squad star -->
+    <path d="M134 108 L136 102 L140 108 L134 106Z M140 108 L144 102 L146 108 L140 106Z" fill="#f5c518" opacity=".5"/>
+    <!-- fat chain -->
+    <path d="M112 86 Q140 100 168 86" stroke="#f5c518" stroke-width="3" fill="none" opacity=".65"/>
+    <text x="140" y="192" text-anchor="middle" font-family="'Bebas Neue',sans-serif" font-size="13" fill="#f5c518" opacity=".8" letter-spacing="3">CRACK</text>
+  </symbol>
+
+  <!-- TREJO / DANNY TREJO -->
+  <symbol id="portrait-trejo" viewBox="0 0 280 200">
+    <rect width="280" height="200" fill="#080a08"/>
+    <!-- scar effects bg -->
+    <path d="M60 0 L80 200" stroke="#1a1a1a" stroke-width="1" opacity=".5"/>
+    <path d="M200 0 L220 200" stroke="#1a1a1a" stroke-width="1" opacity=".4"/>
+    <!-- muscular lean build -->
+    <ellipse cx="140" cy="55" rx="28" ry="30" fill="#1c1c1c"/>
+    <ellipse cx="94" cy="92" rx="30" ry="20" fill="#181818"/>
+    <ellipse cx="186" cy="92" rx="30" ry="20" fill="#181818"/>
+    <rect x="104" y="74" width="72" height="105" rx="4" fill="#141414"/>
+    <!-- mustache / stern face -->
+    <ellipse cx="140" cy="57" rx="19" ry="21" fill="#212121"/>
+    <ellipse cx="132" cy="52" rx="3" ry="2.5" fill="#888" opacity=".9"/>
+    <ellipse cx="148" cy="52" rx="3" ry="2.5" fill="#888" opacity=".9"/>
+    <!-- iconic moustache -->
+    <path d="M130 64 Q140 69 150 64" stroke="#555" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <!-- tattoos on arms -->
+    <path d="M96 95 Q100 105 94 115" stroke="#555" stroke-width="1.5" fill="none"/>
+    <path d="M184 95 Q180 105 186 115" stroke="#555" stroke-width="1.5" fill="none"/>
+    <!-- veteran tag -->
+    <rect x="118" y="104" width="44" height="14" rx="2" fill="#1a1a1a" stroke="#555" stroke-width="1"/>
+    <text x="140" y="115" text-anchor="middle" font-family="'Bebas Neue',sans-serif" font-size="9" fill="#888">VETERANO</text>
+    <text x="140" y="192" text-anchor="middle" font-family="'Bebas Neue',sans-serif" font-size="13" fill="#888" opacity=".8" letter-spacing="3">TREJO</text>
+  </symbol>
+
+  <!-- LUDA / LUDACRIS -->
+  <symbol id="portrait-luda" viewBox="0 0 280 200">
+    <rect width="280" height="200" fill="#08080c"/>
+    <!-- DTP purple accent -->
+    <ellipse cx="140" cy="180" rx="100" ry="50" fill="#7b2fff" opacity=".06"/>
+    <!-- athletic build -->
+    <ellipse cx="140" cy="57" rx="25" ry="27" fill="#1c1c1c"/>
+    <ellipse cx="100" cy="90" rx="22" ry="14" fill="#1a1a1a"/>
+    <ellipse cx="180" cy="90" rx="22" ry="14" fill="#1a1a1a"/>
+    <rect x="110" y="76" width="60" height="100" rx="5" fill="#151515"/>
+    <!-- fresh fitted cap -->
+    <rect x="116" y="30" width="48" height="20" rx="5" fill="#0e0e14"/>
+    <rect x="112" y="46" width="56" height="5" rx="2" fill="#12121a"/>
+    <!-- face -->
+    <ellipse cx="140" cy="58" rx="18" ry="20" fill="#202020"/>
+    <!-- big smile energy -->
+    <ellipse cx="132" cy="52" rx="3" ry="2.5" fill="#f5c518" opacity=".85"/>
+    <ellipse cx="148" cy="52" rx="3" ry="2.5" fill="#f5c518" opacity=".85"/>
+    <path d="M130 63 Q140 70 150 63" stroke="#f5c518" stroke-width="1.5" fill="none" opacity=".5"/>
+    <!-- DTP chain -->
+    <path d="M118 84 Q140 96 162 84" stroke="#7b2fff" stroke-width="2" fill="none" opacity=".5"/>
+    <circle cx="140" cy="98" r="5" fill="#7b2fff" opacity=".4"/>
+    <text x="140" y="192" text-anchor="middle" font-family="'Bebas Neue',sans-serif" font-size="13" fill="#7b2fff" opacity=".8" letter-spacing="3">LUDA</text>
+  </symbol>
+
+  <!-- GHOSTFACE / WU-TANG -->
+  <symbol id="portrait-ghostface" viewBox="0 0 280 200">
+    <rect width="280" height="200" fill="#0c0c0a"/>
+    <!-- wu-tang gold -->
+    <ellipse cx="140" cy="160" rx="80" ry="50" fill="#f5c518" opacity=".04"/>
+    <!-- stocky wu build -->
+    <ellipse cx="140" cy="58" rx="27" ry="29" fill="#1a1a1a"/>
+    <ellipse cx="96" cy="92" rx="26" ry="16" fill="#181818"/>
+    <ellipse cx="184" cy="92" rx="26" ry="16" fill="#181818"/>
+    <rect x="106" y="76" width="68" height="100" rx="5" fill="#161616"/>
+    <!-- iron man mask / do-rag -->
+    <ellipse cx="140" cy="52" rx="22" ry="24" fill="#161616"/>
+    <path d="M118 48 Q140 38 162 48 L158 60 Q140 52 122 60Z" fill="#111"/>
+    <!-- mask slots -->
+    <ellipse cx="132" cy="52" rx="4" ry="3" fill="#f5c518" opacity=".6"/>
+    <ellipse cx="148" cy="52" rx="4" ry="3" fill="#f5c518" opacity=".6"/>
+    <!-- wu-tang W -->
+    <path d="M122 94 L128 110 L140 102 L152 110 L158 94" stroke="#f5c518" stroke-width="2.5" fill="none" opacity=".6"/>
+    <!-- tons of rings / bling -->
+    <circle cx="126" cy="120" r="3" fill="#f5c518" opacity=".5"/>
+    <circle cx="132" cy="122" r="3" fill="#f5c518" opacity=".5"/>
+    <circle cx="148" cy="122" r="3" fill="#f5c518" opacity=".5"/>
+    <circle cx="154" cy="120" r="3" fill="#f5c518" opacity=".5"/>
+    <text x="140" y="192" text-anchor="middle" font-family="'Bebas Neue',sans-serif" font-size="13" fill="#f5c518" opacity=".8" letter-spacing="2">GHOSTFACE</text>
+  </symbol>
+
+  <!-- REDMAN / REDMAN -->
+  <symbol id="portrait-redman" viewBox="0 0 280 200">
+    <rect width="280" height="200" fill="#0c0808"/>
+    <!-- def squad red glow -->
+    <ellipse cx="50" cy="50" rx="80" ry="60" fill="#cc2200" opacity=".05"/>
+    <!-- streetwear loose build -->
+    <ellipse cx="140" cy="57" rx="26" ry="28" fill="#1c1c1c"/>
+    <ellipse cx="98" cy="90" rx="24" ry="15" fill="#1a1a1a"/>
+    <ellipse cx="182" cy="90" rx="24" ry="15" fill="#1a1a1a"/>
+    <rect x="108" y="76" width="64" height="100" rx="5" fill="#181818"/>
+    <!-- fitted & goatee face -->
+    <ellipse cx="140" cy="58" rx="19" ry="21" fill="#1e1e1e"/>
+    <ellipse cx="132" cy="52" rx="3" ry="2.5" fill="#cc4400" opacity=".9"/>
+    <ellipse cx="148" cy="52" rx="3" ry="2.5" fill="#cc4400" opacity=".9"/>
+    <!-- goatee -->
+    <path d="M134 65 Q140 72 146 65" stroke="#333" stroke-width="2.5" fill="none"/>
+    <rect x="136" y="65" width="8" height="8" rx="4" fill="#333"/>
+    <!-- Bricks chain motif -->
+    <path d="M116 86 Q140 98 164 86" stroke="#cc4400" stroke-width="2" fill="none" opacity=".6"/>
+    <text x="140" y="192" text-anchor="middle" font-family="'Bebas Neue',sans-serif" font-size="13" fill="#cc4400" opacity=".8" letter-spacing="3">REDMAN</text>
+  </symbol>
+
+  <!-- STICKY FINGAZ -->
+  <symbol id="portrait-sticky" viewBox="0 0 280 200">
+    <rect width="280" height="200" fill="#0a080c"/>
+    <!-- onyx energy -->
+    <ellipse cx="180" cy="180" rx="100" ry="60" fill="#4a0080" opacity=".06"/>
+    <!-- aggressive stance build -->
+    <ellipse cx="140" cy="55" rx="28" ry="30" fill="#1a1a1a"/>
+    <ellipse cx="92" cy="92" rx="28" ry="18" fill="#171717"/>
+    <ellipse cx="188" cy="92" rx="28" ry="18" fill="#171717"/>
+    <rect x="102" y="74" width="76" height="105" rx="5" fill="#141414"/>
+    <!-- shaved head / intense -->
+    <ellipse cx="140" cy="52" rx="22" ry="22" fill="#1e1e1e"/>
+    <ellipse cx="130" cy="47" rx="3.5" ry="3" fill="#4a0080" opacity=".9"/>
+    <ellipse cx="150" cy="47" rx="3.5" ry="3" fill="#4a0080" opacity=".9"/>
+    <!-- scowl line -->
+    <path d="M130 43 L133 40" stroke="#888" stroke-width="1.5" fill="none"/>
+    <path d="M150 43 L147 40" stroke="#888" stroke-width="1.5" fill="none"/>
+    <!-- onyx logo X -->
+    <path d="M128 96 L152 116 M152 96 L128 116" stroke="#4a0080" stroke-width="2.5" opacity=".5"/>
+    <text x="140" y="192" text-anchor="middle" font-family="'Bebas Neue',sans-serif" font-size="12" fill="#4a0080" opacity=".8" letter-spacing="2">STICKY FINGAZ</text>
+  </symbol>
+
+  <!-- ICE-T -->
+  <symbol id="portrait-icet" viewBox="0 0 280 200">
+    <rect width="280" height="200" fill="#060810"/>
+    <!-- OG west coast blue -->
+    <ellipse cx="140" cy="180" rx="100" ry="50" fill="#1a3060" opacity=".1"/>
+    <!-- athletic-lean OG build -->
+    <ellipse cx="140" cy="56" rx="24" ry="27" fill="#1c1c1c"/>
+    <ellipse cx="98" cy="90" rx="22" ry="14" fill="#1a1a1a"/>
+    <ellipse cx="182" cy="90" rx="22" ry="14" fill="#1a1a1a"/>
+    <rect x="108" y="76" width="64" height="100" rx="5" fill="#161616"/>
+    <!-- Ice face classic look -->
+    <ellipse cx="140" cy="57" rx="18" ry="20" fill="#1e1e1e"/>
+    <ellipse cx="131" cy="52" rx="3" ry="2.5" fill="#4488cc" opacity=".9"/>
+    <ellipse cx="149" cy="52" rx="3" ry="2.5" fill="#4488cc" opacity=".9"/>
+    <!-- thin mustache -->
+    <path d="M132 63 Q140 67 148 63" stroke="#555" stroke-width="2" fill="none"/>
+    <!-- sunglasses prop -->
+    <rect x="126" y="48" width="28" height="10" rx="3" fill="none" stroke="#4488cc" stroke-width="1.5" opacity=".6"/>
+    <line x1="140" y1="48" x2="140" y2="58" stroke="#4488cc" stroke-width="1" opacity=".4"/>
+    <!-- body guard chain -->
+    <path d="M116 84 Q140 96 164 84" stroke="#4488cc" stroke-width="2" fill="none" opacity=".5"/>
+    <text x="140" y="192" text-anchor="middle" font-family="'Bebas Neue',sans-serif" font-size="13" fill="#4488cc" opacity=".8" letter-spacing="3">ICE-T</text>
+  </symbol>
+
+  <!-- GENERIC placeholder for unlisted characters -->
+  <symbol id="portrait-generic" viewBox="0 0 280 200">
+    <rect width="280" height="200" fill="#0c0c0c"/>
+    <!-- grid lines -->
+    <line x1="0" y1="100" x2="280" y2="100" stroke="#1a1a1a" stroke-width="1"/>
+    <line x1="140" y1="0" x2="140" y2="200" stroke="#1a1a1a" stroke-width="1"/>
+    <!-- question mark silhouette -->
+    <ellipse cx="140" cy="55" rx="26" ry="28" fill="#151515"/>
+    <ellipse cx="96" cy="90" rx="24" ry="14" fill="#131313"/>
+    <ellipse cx="184" cy="90" rx="24" ry="14" fill="#131313"/>
+    <rect x="106" y="76" width="68" height="100" rx="5" fill="#121212"/>
+    <ellipse cx="140" cy="56" rx="16" ry="18" fill="#1a1a1a"/>
+    <!-- ? mark in face area -->
+    <text x="140" y="65" text-anchor="middle" font-family="'Bebas Neue',sans-serif" font-size="24" fill="#333">?</text>
+    <!-- cross-hatch pattern -->
+    <path d="M0 180 Q70 160 140 170 Q210 180 280 160" stroke="#1a1a1a" stroke-width="1" fill="none"/>
+  </symbol>
+
+</svg>
